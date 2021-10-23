@@ -335,9 +335,9 @@ a.order {
   bottom: 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .filler {
-    flex-grow: 0;
+    display: none;
   }
   .header {
     padding: 0 13px;
@@ -392,5 +392,10 @@ a.order {
   }
   .header > .burger-menu {
     display: block;
+  }
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+  .main .container {
+    background-size: 400px;
   }
 }
