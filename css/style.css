@@ -335,9 +335,9 @@ a.order {
   bottom: 0px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .filler {
-    flex-grow: 0;
+    display: none;
   }
   .header {
     padding: 0 13px;
@@ -392,5 +392,12 @@ a.order {
   }
   .header > .burger-menu {
     display: block;
+  }
+}
+@media (min-width: 400px) and (max-width: 1000px) {
+  .main .container {
+    background: linear-gradient(0deg, rgba(0,0,0,0.80) 0%, rgba(233,148,148,0) 46%), url('../img/person.png') no-repeat;
+    background-size: 400px;
+    background-position: bottom;
   }
 }
