@@ -12,11 +12,17 @@ var swiper = new Swiper(".instrumentsSwiper", {
 
 // certiifcate
 var swiper = new Swiper(".certiifcateSwiper", {
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
   },
+  breakpoints: {
+    400: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  }
 });
 
 // porffolio slider

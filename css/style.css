@@ -781,12 +781,7 @@ button.order:active {
   font-weight: 600;
 }
 @media screen and (max-width: 1000px) {
-  .sub-services .table .row.header {
-    display: none;
-  }
-  .sub-services .table .row .col.title {
-    width: 100%;
-  }
+
 }
 /* end sub-services */
 /* order-services */
@@ -859,6 +854,30 @@ button.order:active {
   font-weight: bold;
   text-decoration: underline;
 }
+@media screen and (max-width: 1000px) {
+  .order-services {
+    text-align: center;
+  }
+  .order-services {
+    padding: 41px 0;
+  }
+  .order-services .form-group {
+    flex-direction: column;
+    align-content: center;
+    width: 95%;
+  }
+  .order-services .form-group button {
+    width: 100%;
+    margin-top: 6px;
+  }
+  .order-services .form-group input {
+    margin: 0 0 10px 0;
+    width: 100%;
+  }
+  .order-services .checkbox-group {
+    display: block;
+  }
+}
 /* end order-services */
 /* how-work */
 .how-work {
@@ -930,6 +949,14 @@ button.order:active {
 .how-work .steps .step-item .description {
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1000px) {
+  .how-work {
+    padding: 42px 20px;
+  }
+  .how-work img {
+    display: none;
+  }
+}
 /* end how-work */
 /* certificate */
 .certificate {
@@ -968,6 +995,21 @@ button.order:active {
 }
 .certificate .swiper-pagination-bullet {
   background: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .certificate {
+    padding: 42px 20px;
+  }
+  .certificate h1, .certificate h1 span {
+    font-size: 29px;
+  }
+  .certificate .container a {
+    display: none;
+  }
+  .certificate .certiifcateSwiper  {
+    width: 70%;
+    margin: 0px;
+  }
 }
 /* end certificate */
 /* portfolio */
@@ -1058,6 +1100,11 @@ button.order:active {
   top: 0;
   object-fit: cover;
   object-position: 0 0;
+}
+@media screen and (max-width: 1000px) {
+  .portfolio .swiper-slide {
+    width: 300px !important;
+  }
 }
 /* end portfolio */
 /* rate */
