@@ -622,6 +622,7 @@ button.order:active {
     margin-top: 30px;
     border-left: 0;
     text-align: center;
+    padding: 0;
   }
 }
 /* end citate */
