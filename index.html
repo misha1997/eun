@@ -8,8 +8,74 @@
   <title>ЭУН</title>
 </head>
 <body>
+  <!-- menu mobile -->
+  <div class="menubox" id="menubox">
+    <ul class="menu">
+      <li id="dropdown">
+        <a onclick="myFunction()" href="#">Экспертиза</a>
+        <ul>
+          <li>
+            <a href="#">Землеустроительная эскпертиза</a>
+          </li>
+          <li>
+            <a href="#">Экспертиза качества строительных работ</a>
+          </li>
+          <li>
+            <a href="#">Электротехническая экспертиза</a>
+          </li>
+          <li>
+            <a href="#">Строительная экспертиза</a>
+          </li>
+          <li>
+            <a href="#">Кадастровые услуги</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">Экологическая экспертиза</a>
+      </li>
+      <li>
+        <a href="#">Геодезические работы</a>
+      </li>
+      <li>
+        <a href="#">Обследование</a>
+      </li>
+    </ul>
+    <hr>
+    <ul class="navigation">
+      <li><a href="#">Компания</a></li>
+      <li><a href="#">Контакты</a></li>
+      <li><a href="#">Задать вопрос</a></li>
+    </ul>
+    <ul class="contacts">
+      <li class="email"><img src="img/icons/mail.png"><a href="#">info@eunpro.ru</a></li>
+      <li><img src="img/icons/phone-small.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
+    </ul>
+    <button class="order" onclick="showHideModal()">заказать звонок</button>
+  </div>
+  <!-- end menu mobile -->
+  <!-- modal order -->
+  <div id="modal">
+    <div class="content">
+      <button class="close" id="close" onclick="showHideModal()">
+        <span></span>
+      </button>
+      <h1>Заказать экспертизу</h1>
+      <h6>Заполните форму и мы ответим в <span class="gold-color">течение 10 минут</span></h6>
+      <div class="form-group">
+        <input class="name" type="text" placeholder="Введите ваше имя">
+        <input class="phone" type="text" placeholder="Введите номер телефона">
+        <button class="order">Заказать</button>
+      </div>
+      <div class="checkbox-group">
+        <input type="checkbox" id="check">
+        <label for="check">Отправляя заявку вы соглашаетесь с <a href="#">обработкой персональных данных</a></label>
+      </div>
+    </div>
+  </div>
+  <!-- end modal order -->
+  <!-- HEADER -->
   <div class="header container">
-    <!-- BEGIN HEADER -->
     <img src="img/logo.png" alt="">
     <ul class="navigation">
       <li><a href="#">Компания</a></li>
@@ -26,60 +92,15 @@
       <label class="menu-btn" for="menu-toggle">
         <span></span>
       </label>
-      <!-- BEGIN MENU FOR MOBILE -->
-      <div class="menubox">
-        <ul class="menu">
-          <li>
-            <a href="#">Экспертиза <img src="img/icons/down.png" class="down"></a>
-            <ul class="dropdown">
-              <li>
-                <a href="#">Землеустроительная эскпертиза</a>
-              </li>
-              <li>
-                <a href="#">Экспертиза качества строительных работ</a>
-              </li>
-              <li>
-                <a href="#">Электротехническая экспертиза</a>
-              </li>
-              <li>
-                <a href="#">Строительная экспертиза</a>
-              </li>
-              <li>
-                <a href="#">Кадастровые услуги</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Экологическая экспертиза</a>
-          </li>
-          <li>
-            <a href="#">Геодезические работы</a>
-          </li>
-          <li>
-            <a href="#">Обследование</a>
-          </li>
-        </ul>
-        <hr>
-        <ul class="navigation">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#">Задать вопрос</a></li>
-        </ul>
-        <ul class="contacts">
-          <li class="email"><img src="img/icons/mail.png"><a href="#">info@eunpro.ru</a></li>
-          <li><img src="img/icons/phone-small.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
-        </ul>
-        <a href="#" class="order">Заказать экспертизу</a>
-      </div>
-      <!-- END MENU FOR MOBILE -->
     </div>
   </div>
   <!-- END HEADER -->
   <!-- BEGIN BANNER -->
   <div class="main">
+    <div class="bg">
     <ul class="menu container">
       <li>
-        <a href="#"><img src="img/icons/1.png"> Экспертиза <img src="img/icons/down.png" class="down"></a>
+        <a href="#"><i class="menu-icon-1"></i> Экспертиза <i class="menu-icon-dropdown"></i></a>
         <ul class="dropdown">
           <li>
             <a href="#">Землеустроительная эскпертиза</a>
@@ -99,35 +120,38 @@
         </ul>
       </li>
       <li>
-        <a href="#"><img src="img/icons/2.png"> Экологическая экспертиза</a>
+        <a href="#"><i class="menu-icon-2"></i> Экологическая экспертиза</a>
       </li>
       <li>
-        <a href="#"><img src="img/icons/3.png"> Геодезические работы</a>
+        <a href="#"><i class="menu-icon-3"></i> Геодезические работы</a>
       </li>
       <li>
-        <a href="#"><img src="img/icons/4.png"> Обследование</a>
+        <a href="#"><i class="menu-icon-4"></i> Обследование</a>
       </li>
     </ul>
-    <div class="container test">
+
+    <div class="container">
       <h1>
-        Проведение <br><span>независимой <br> экспертизы</span> и оценки
+        Проведение <br><span class="gold-color">независимой <br> экспертизы</span> и оценки
       </h1>
       <h2>Судебные и внесудебные экспертизы, а также исследования по различным вопросам</h2>
-      <a href="#" class="order">Заказать экспертизу</a>
+      <button class="order" onclick="showHideModal()">Заказать экспертизу</button>
+    </div>
     </div>
   </div>
   <!-- END BANNER -->
+  <!-- BLOCK 2 -->
   <div class="container block-2">
     <div class="col">
       <div class="title">Оценочная компания</div>
-      <h2><span>"Экспертиза и управление</span> недвижимостью"</h2>
-      <h3>Услуги независимой экспертизы и оценки в Москве</h3>
+      <h1><span>"Экспертиза <br>и управление</span> недвижимостью"</h1>
+      <h6>Услуги независимой экспертизы <br>и оценки в Москве</h6>
     </div>
     <div class="col skills">
       <div class="skill-item">
           <div>
             <div class="number">
-              <span>01</span>
+              <span class="gold-color">01</span>
             </div>
           </div>
           <div class="text">
@@ -137,7 +161,7 @@
       <div class="skill-item">
         <div>
           <div class="number">
-            <span>01</span>
+            <span class="gold-color">02</span>
           </div>
         </div>
         <div class="text">
@@ -147,7 +171,7 @@
       <div class="skill-item">
           <div>
             <div class="number">
-              <span>01</span>
+              <span class="gold-color">03</span>
             </div>
           </div>
           <div class="text">
@@ -157,7 +181,7 @@
         <div class="skill-item">
           <div>
             <div class="number">
-              <span>01</span>
+              <span class="gold-color">04</span>
             </div>
           </div>
           <div class="text">
@@ -167,7 +191,7 @@
       <div class="skill-item">
         <div>
           <div class="number">
-            <span>01</span>
+            <span class="gold-color">05</span>
           </div>
         </div>
         <div class="text">
@@ -177,7 +201,7 @@
       <div class="skill-item">
         <div>
           <div class="number">
-            <span>01</span>
+            <span class="gold-color">06</span>
           </div>
         </div>
         <div class="text">
@@ -186,86 +210,86 @@
       </div>
     </div>
   </div>
-  <!--  -->
+  <!-- citate -->
   <div class="container">
     <div class="citate">
       <img src="img/logo-citate.png" alt="">
       <p>
-        Наша компания подберет и предложит самый лучший вариант для решения интересующего Вас вопроса. Мы поможем Вам решить проблему любой сложности в судебном и внесудебном порядке!
+        Наша компания <span class="gold-color">подберет и предложит самый лучший вариант для решения</span> интересующего Вас вопроса. Мы поможем Вам решить проблему любой сложности в судебном и внесудебном порядке!
       </p>
     </div>
   </div>
-  <!--  -->
+  <!-- services -->
   <div class="container services">
-    <h2>Наши услуги:</h2>
+    <h1>Наши услуги:</h1>
     <div class="rows">
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-1.png" alt="">
         <div class="content">
           <div class="title">
-            Экспертиза шума в квартире
+            Экологическая экспертиза квартиры
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
         </div>
       </div>
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-2.png" alt="">
         <div class="content">
           <div class="title">
             Экспертиза шума в квартире
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
         </div>
       </div>
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-3.png" alt="">
         <div class="content">
           <div class="title">
-            Экспертиза шума в квартире
+            Проведение экспертизы воздуха
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
         </div>
       </div>
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-4.png" alt="">
         <div class="content">
           <div class="title">
-            Экспертиза шума в квартире
+            Экспертиза шумоизоляции в квартире
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
         </div>
       </div>
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-5.png" alt="">
         <div class="content">
           <div class="title">
-            Экспертиза шума в квартире
+            Замер освещенности помещения
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
         </div>
       </div>
       <div class="service-item">
-        <img src="img/service-item.png" alt="">
+        <img src="img/services/service-6.png" alt="">
         <div class="content">
           <div class="title">
-            Экспертиза шума в квартире
+            Экспертиза электромагнитного излучения
           </div>
-          <div class="price">
+          <div class="price gold-color">
             15 000 руб.
           </div>
           <button class="order">Заказать</button>
@@ -273,9 +297,9 @@
       </div>
     </div>
   </div>
-  <!--  -->
+  <!-- end services -->
   <div class="container sub-services">
-    <h2>Дополнительные услуги</h2>
+    <h1>Дополнительные услуги</h1>
     <div class="table">
       <div class="row header">
         <div class="col">
@@ -292,7 +316,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col title">
           Выезд эксперта в праздничные и выходные дни
         </div>
         <div class="col">
@@ -306,39 +330,41 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          Выезд эксперта в праздничные и выходные дни
+        <div class="col title">
+          Выезд за пределы МКАД
         </div>
         <div class="col">
-          от 5000 руб.
+          от 1000 руб.
         </div>
         <div class="col">
-          от 5000 руб.
+          от 1000 руб.
         </div>
         <div class="col">
-          от 5000 руб.
+          от 1000 руб.
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          Выезд эксперта в праздничные и выходные дни
+        <div class="col title">
+          Выезд эксперта в ночное время суток
         </div>
         <div class="col">
-          от 5000 руб.
+          25% к стоимости работ руб.
         </div>
         <div class="col">
-          от 5000 руб.
+          25% к стоимости работ руб.
         </div>
         <div class="col">
-          от 5000 руб.
+          25% к стоимости работ руб.
         </div>
       </div>
     </div>
   </div>
+
+
   <!--  -->
   <div class="order-services">
-    <h2>Заказать экспертизу</h2>
-    <h3>Заполните форму и мы ответим в <span>течение 10 минут</span></h3>
+    <h1>Заказать экспертизу</h1>
+    <h6>Заполните форму и мы ответим в <span class="gold-color">течение 10 минут</span></h6>
     <div class="form-group">
       <input class="name" type="text" placeholder="Введите ваше имя">
       <input class="phone" type="text" placeholder="Введите номер телефона">
@@ -352,40 +378,40 @@
   <!--  -->
   <div class="how-work">
     <div class="container">
-      <h2>Как мы <span>работаем</span></h2>
+      <h1>Как мы <span>работаем</span></h1>
       <div class="steps">
         <div class="step-item">
           <div class="number">
             1
           </div>
-          <div class="text">
+          <div class="description">
             <div class="title">Пункт 1</div>
             В рамках досудебных и судебных разбирательств между физическими лицами и/или
           </div>
         </div>
         <div class="step-item">
           <div class="number">
-            1
+            2
           </div>
-          <div class="text">
+          <div class="description">
             <div class="title">Пункт 1</div>
             В рамках досудебных и судебных разбирательств между физическими лицами и/или
           </div>
         </div>
         <div class="step-item">
           <div class="number">
-            1
+            3
           </div>
-          <div class="text">
+          <div class="description">
             <div class="title">Пункт 1</div>
             В рамках досудебных и судебных разбирательств между физическими лицами и/или
           </div>
         </div>
         <div class="step-item">
           <div class="number">
-            1
+            4
           </div>
-          <div class="text">
+          <div class="description">
             <div class="title">Пункт 1</div>
             В рамках досудебных и судебных разбирательств между физическими лицами и/или
           </div>
@@ -398,10 +424,10 @@
   <!--  -->
   <div class="certificate">
     <div class="container">
-      <h2>Наши <span>сертификаты</span></h2>
+      <h1>Наши <span>сертификаты</span></h1>
       <a href="#">смотреть все</a>
     </div>
-    <div class="swiper mySwiper container">
+    <div class="swiper certiifcateSwiper container">
       <div class="swiper-wrapper">
         <img src="img/certiifcate.png" class="swiper-slide">
         <img src="img/certiifcate.png" class="swiper-slide">
@@ -412,12 +438,13 @@
         <img src="img/certiifcate.png" class="swiper-slide">
         <img src="img/certiifcate.png" class="swiper-slide">
       </div>
+      <div class="swiper-pagination"></div>
     </div>
   </div>
   <!--  -->
   <div class="portfolio">
     <div class="container">
-      <h2>Примеры <span>наших работ</span></h2>
+      <h1>Примеры <span>наших работ</span></h1>
       <div class="swiper portfolioSwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide portfolio-button" onclick="currentSlide(0)">
@@ -455,10 +482,10 @@
           <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
         </div>
         <div class="pictures">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
+          <img src="img/portfolio.png">
+          <img src="img/portfolio.png">
+          <img src="img/portfolio.png">
+          <img src="img/portfolio.png">
         </div>
       </div>
       <div class="portfolio-item">
@@ -500,32 +527,32 @@
   <!--  -->
   <div class="rate">
     <div class="rate-item">
-      <div class="number">5243</div>
+      <div class="number gold-color">5243</div>
       Выполненные экспертизы
     </div>
     <div class="rate-item">
-      <div class="number">873</div>
+      <div class="number gold-color">873</div>
       Довольных клиентов
     </div>
     <div class="rate-item">
-      <div class="number">1056</div>
+      <div class="number gold-color">1056</div>
       Довольных клиентов
     </div>
     <div class="rate-item">
-      <div class="number">873</div>
+      <div class="number gold-color">873</div>
       Довольных клиентов
     </div>
   </div>
   <!--  -->
   <div class="instruments">
     <div class="container">
-      <h2>Мы используем <span>точное оборудование</span></h2>
+      <h1>Мы используем <span>точное оборудование</span></h1>
     </div>
     <div class="swiper instrumentsSwiper container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="instruments-item">
-            <img src="img/instrument.png" class="previev">
+            <img src="img/instruments/instrument-1.png" class="previev">
             <div class="title">Шумомера Testo 816</div>
             <div class="description">
               Шумомер Testo 816 идеален для экспертов, которые проводят измерения уровня шума...
@@ -535,7 +562,7 @@
         </div>
         <div class="swiper-slide">
           <div class="instruments-item">
-            <img src="img/instrument.png" class="previev">
+            <img src="img/instruments/instrument-2.png" class="previev">
             <div class="title">Шумомера Testo 816</div>
             <div class="description">
               Шумомер Testo 816 идеален для экспертов, которые проводят измерения уровня шума...
@@ -545,7 +572,7 @@
         </div>
         <div class="swiper-slide">
           <div class="instruments-item">
-            <img src="img/instrument.png" class="previev">
+            <img src="img/instruments/instrument-3.png" class="previev">
             <div class="title">Шумомера Testo 816</div>
             <div class="description">
               Шумомер Testo 816 идеален для экспертов, которые проводят измерения уровня шума...
@@ -555,7 +582,7 @@
         </div>
         <div class="swiper-slide">
           <div class="instruments-item">
-            <img src="img/instrument.png" class="previev">
+            <img src="img/instruments/instrument-4.png" class="previev">
             <div class="title">Шумомера Testo 816</div>
             <div class="description">
               Шумомер Testo 816 идеален для экспертов, которые проводят измерения уровня шума...
@@ -565,7 +592,7 @@
         </div>
         <div class="swiper-slide">
           <div class="instruments-item">
-            <img src="img/instrument.png" class="previev">
+            <img src="img/instruments/instrument-4.png" class="previev">
             <div class="title">Шумомера Testo 816</div>
             <div class="description">
               Шумомер Testo 816 идеален для экспертов, которые проводят измерения уровня шума...
@@ -580,7 +607,7 @@
   <!--  -->
   <div class="rewievs">
     <div class="title">
-      <h2><span>Отзывы</span> наших клиентов</h2>
+      <h1><span>Отзывы</span> наших клиентов</h1>
     </div>
     <div class="swiper rewievsSwiper container">
       <div class="swiper-wrapper">
@@ -654,7 +681,7 @@
   </div>
   <!--  -->
   <div class="container experts">
-    <h2>Наши <span>эксперты</span></h2>
+    <h1>Наши <span>эксперты</span></h1>
     <div class="experts-items">
       <div class="expert-item">
         <img src="img/expert.png" alt="">
@@ -752,44 +779,9 @@
       </div>
     </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".rewievsSwiper", {
-      slidesPerView: 3,
-      spaceBetween: 30
-    });
-    var swiper = new Swiper(".instrumentsSwiper", {
-      slidesPerView: 4,
-      spaceBetween: 30
-    });
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 4,
-      spaceBetween: 30
-    });
-    var swiper = new Swiper(".portfolioSwiper", {
-      slidesPerView: 5,
-      spaceBetween: 14,
-      scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: false,
-      },
-    });
-    currentSlide(0);
-    function currentSlide(n) {
-      var slides = document.getElementsByClassName("portfolio-item");
-      var buttons = document.getElementsByClassName(" portfolio-button");
-      for (let i = 0; i < slides.length; i++) {
-        if(i == n) {
-          slides[i].style.display = "grid";
-          buttons[i].classList.add('active');
-        } else {
-          slides[i].style.display = "none";
-          buttons[i].classList.remove('active');
-        }
-      }
-    }
-  </script>
+  <!-- end citate -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/modal.js"></script>
+  <script src="js/slidersConfig.js"></script>
 </body>
 </html>
