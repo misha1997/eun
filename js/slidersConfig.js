@@ -2,6 +2,9 @@
 var swiper = new Swiper(".expertsSwiper", {
   slidesPerView: 1,
   spaceBetween: 11,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   breakpoints: {
     1000: {
       slidesPerView: 4,
@@ -14,6 +17,9 @@ var swiper = new Swiper(".expertsSwiper", {
 var swiper = new Swiper(".rewievsSwiper", {
   slidesPerView: 1,
   spaceBetween: 50,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   breakpoints: {
     1000: {
       slidesPerView: 3,
@@ -26,6 +32,9 @@ var swiper = new Swiper(".rewievsSwiper", {
 var swiper = new Swiper(".instrumentsSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+  },
   breakpoints: {
     1000: {
       slidesPerView: 4,

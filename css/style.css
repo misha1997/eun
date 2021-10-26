@@ -533,12 +533,12 @@ button.order:active {
 }
 /* end banner */
 /* BLOCK 2 */
-.block-2 {
+.block-skills {
   display: grid;
   grid-template-columns: 40% 60%;
   padding-top: 166px;
 }
-.block-2 .title {
+.block-skills .title {
   background: linear-gradient(90deg, #FBDCA5 0%, #EABC6E 100%);
   border-radius: 4px;
   display: inline-block;
@@ -548,31 +548,31 @@ button.order:active {
   font-weight: 600;
   font-size: 20px;
 }
-.block-2 h1 {
+.block-skills h1 {
   font-weight: bold;
   line-height: 60px;
 }
-.block-2  h6 {
+.block-skills  h6 {
   margin-top: 43px;
   line-height: 35px;
 }
-.block-2 .skills {
+.block-skills .skills {
   display: grid;
   grid-template-columns: 50% 50%;
 }
-.block-2 .skills .skill-item {
+.block-skills .skills .skill-item {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
   flex-wrap: grid;
 }
-.block-2 .skills .skill-item {
+.block-skills .skills .skill-item {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 26px;
 }
-.block-2 .number {
+.block-skills .number {
   background-color: #24365F;
   width: 100px;
   height: 100px;
@@ -581,7 +581,7 @@ button.order:active {
   text-align: center;
   margin-right: 23px;
 }
-.block-2 .number > span {
+.block-skills .number > span {
   font-family: Merriweather, sans-serif;
   font-weight: bold;
   font-size: 30px;
@@ -589,19 +589,25 @@ button.order:active {
   display: inline-flex;
   align-items: center;
 }
-.block-2 .skill-item > .text > span {
+.block-skills .skill-item > .text > span {
   color: #486DF1;
   font-weight: bold;
 }
 @media screen and (max-width: 1000px) {
-  .block-2 {
-    margin-top: 100px;
+  .block-skills {
     display: block;
-    padding: 0 30px;
+    padding: 100px 30px 0 30px;
   }
-  .block-2 .skills {
+  .block-skills .skills {
     display: block;
     margin-top: 44px;
+  }
+  .block-skills h1 {
+    line-height: 37px;
+  }
+  .block-skills h6 {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 /* end block 2 */
@@ -1035,6 +1041,7 @@ button.order:active {
   font-weight: 600;
   font-size: 22px;
   margin-bottom: 20px;
+  padding-top: 2px;
 }
 .how-work .steps .step-item .description {
   padding-bottom: 30px;
@@ -1045,6 +1052,14 @@ button.order:active {
   }
   .how-work img {
     display: none;
+  }
+  .how-work .steps .step-item .title {
+    font-size: 16px;
+    padding-top: 5px;
+  }
+  .how-work .steps .step-item .description {
+    font-size: 14px;
+    line-height: 175%;
   }
 }
 /* end how-work */
@@ -1183,10 +1198,12 @@ button.order:active {
 }
 .portfolio .portfolio-item a.show-more {
   color: #6987F3;
-  text-decoration-line: underline;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+}
+.portfolio .portfolio-item a.show-more:hover {
+  text-decoration-line: underline;
 }
 .portfolio .portfolio-item .pictures {
   position: relative;
@@ -1229,7 +1246,7 @@ button.order:active {
   right: 20px;
 }
 .portfolio .portfolio-item .content .pictureSswiper .swiper-slide img {
-  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1373,7 +1390,10 @@ button.order:active {
   text-decoration-line: underline;
 }
 .instruments .instrumentsSwiper {
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+}
+.instruments .swiper-wrapper {
+  padding-bottom: 45px;
 }
 .instruments a.show-all {
   display: inline-block;
@@ -1416,6 +1436,9 @@ button.order:active {
   margin-top: -163px;
   margin-bottom: 36px;
 }
+.rewievs .swiper-wrapper {
+  padding-bottom: 50px;
+}
 .rewievs .rewievs-item {
   padding: 37px 45px;
   background: #FFFFFF;
@@ -1450,10 +1473,12 @@ button.order:active {
   margin-top: 20px;
   display: block;
   color: #6987F3;
-  text-decoration-line: underline;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 14px;
+}
+.rewievs .rewievs-item a:hover {
+  text-decoration-line: underline;
 }
 @media screen and (max-width: 1000px) {
   .rewievs .title {
@@ -1474,6 +1499,9 @@ button.order:active {
   text-align: center;
   padding-bottom: 107px;
   overflow: hidden;
+}
+.experts .swiper-wrapper {
+  margin-bottom: 50px;
 }
 .experts h1 {
   margin-bottom: 108px;
