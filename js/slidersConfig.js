@@ -94,7 +94,7 @@ function currentSlide(n) {
 window.addEventListener('scroll', function onScroll() {
   var rate = document.querySelector('.rate'),
   rateTop = rate.getBoundingClientRect().top
-  if(rateTop <= 0) {
+  if(rateTop <= 500) {
     this.removeEventListener('scroll', onScroll);
     number('number-1');
     number('number-2');
