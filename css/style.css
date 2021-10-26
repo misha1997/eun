@@ -462,7 +462,7 @@ button.order:active {
     position: fixed;
     z-index: 99;
     background: #fff;
-    width: 94%;
+    width: calc(100% - 20px);
   }
   .header > ul.navigation {
     display: none;
@@ -1214,6 +1214,8 @@ button.order:active {
 .portfolio .portfolio-item .content .pictureSswiper .swiper-slide {
   height: 332px;
   position: relative;
+  overflow: hidden;
+  
 }
 .portfolio .portfolio-item .content .pictureSswiper .swiper-slide .magnifier {
   width: 65px;

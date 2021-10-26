@@ -3,7 +3,7 @@ var swiper = new Swiper(".expertsSwiper", {
   slidesPerView: 1,
   spaceBetween: 11,
   breakpoints: {
-    500: {
+    1000: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
@@ -15,7 +15,7 @@ var swiper = new Swiper(".rewievsSwiper", {
   slidesPerView: 1,
   spaceBetween: 50,
   breakpoints: {
-    500: {
+    1000: {
       slidesPerView: 3,
       spaceBetween: 40,
     },
@@ -27,7 +27,7 @@ var swiper = new Swiper(".instrumentsSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   breakpoints: {
-    500: {
+    1000: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
@@ -42,7 +42,7 @@ var swiper = new Swiper(".certiifcateSwiper", {
     el: ".swiper-pagination",
   },
   breakpoints: {
-    500: {
+    1000: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
@@ -62,7 +62,7 @@ var swiper = new Swiper(".portfolioSwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    500: {
+    1000: {
       slidesPerView: 5,
       spaceBetween: 15,
     },
