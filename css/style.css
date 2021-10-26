@@ -1211,9 +1211,23 @@ button.order:active {
   display: none;
 }
 
-.portfolio .portfolio-item .content .pictureSswiper img {
+.portfolio .portfolio-item .content .pictureSswiper .swiper-slide {
   height: 332px;
-  object-fit: cover;
+  position: relative;
+}
+.portfolio .portfolio-item .content .pictureSswiper .swiper-slide .magnifier {
+  width: 65px;
+  height: 47px;
+  background: rgba(255, 255, 255, 0.8) url('../img/magnifier-2.png') no-repeat;
+  background-position: center center;
+  backdrop-filter: blur(4px);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.portfolio .portfolio-item .content .pictureSswiper .swiper-slide img {
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
