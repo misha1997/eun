@@ -15,9 +15,9 @@ var menuToogleBtn = document.getElementById('menu-toggle');
 menuToogleBtn.addEventListener("click", function() {
   menuToogle = !menuToogle;
   if(menuToogle) {
-    document.getElementById('menubox').style.display = "block";
+    document.getElementById('menubox-bg').style.display = "block";
   } else {
-    document.getElementById('menubox').style.display = "none";
+    document.getElementById('menubox-bg').style.display = "none";
   }
 });
 

@@ -9,50 +9,53 @@
 </head>
 <body>
   <!-- menu mobile -->
-  <div class="menubox" id="menubox">
-    <ul class="menu">
-      <li id="dropdown">
-        <a onclick="myFunction()" href="#">Экспертиза</a>
-        <ul>
-          <li>
-            <a href="#">Землеустроительная эскпертиза</a>
-          </li>
-          <li>
-            <a href="#">Экспертиза качества строительных работ</a>
-          </li>
-          <li>
-            <a href="#">Электротехническая экспертиза</a>
-          </li>
-          <li>
-            <a href="#">Строительная экспертиза</a>
-          </li>
-          <li>
-            <a href="#">Кадастровые услуги</a>
-          </li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">Экологическая экспертиза</a>
-      </li>
-      <li>
-        <a href="#">Геодезические работы</a>
-      </li>
-      <li>
-        <a href="#">Обследование</a>
-      </li>
-    </ul>
-    <hr>
-    <ul class="navigation">
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Контакты</a></li>
-      <li><a href="#">Задать вопрос</a></li>
-    </ul>
-    <ul class="contacts">
-      <li class="email"><img src="img/icons/mail.png"><a href="#">info@eunpro.ru</a></li>
-      <li><img src="img/icons/phone-small.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
-    </ul>
-    <button class="order" onclick="showHideModal()">заказать звонок</button>
+  <div id="menubox-bg">
+    <div class="menubox" id="menubox">
+      <ul class="menu">
+        <li id="dropdown">
+          <a onclick="myFunction()" href="#">Экспертиза</a>
+          <ul>
+            <li>
+              <a href="#">Землеустроительная эскпертиза</a>
+            </li>
+            <li>
+              <a href="#">Экспертиза качества строительных работ</a>
+            </li>
+            <li>
+              <a href="#">Электротехническая экспертиза</a>
+            </li>
+            <li>
+              <a href="#">Строительная экспертиза</a>
+            </li>
+            <li>
+              <a href="#">Кадастровые услуги</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Экологическая экспертиза</a>
+        </li>
+        <li>
+          <a href="#">Геодезические работы</a>
+        </li>
+        <li>
+          <a href="#">Обследование</a>
+        </li>
+      </ul>
+      <hr>
+      <ul class="navigation">
+        <li><a href="#">Компания</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Задать вопрос</a></li>
+      </ul>
+      <ul class="contacts">
+        <li class="email"><img src="img/mail.png"><a href="#">info@eunpro.ru</a></li>
+        <li><img src="img/phone-small.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
+      </ul>
+      <button class="order" onclick="showHideModal()">заказать звонок</button>
+    </div>
   </div>
+
   <!-- end menu mobile -->
   <!-- modal order -->
   <div id="modal">
@@ -64,7 +67,7 @@
       <h6>Заполните форму и мы ответим в <span class="gold-color">течение 10 минут</span></h6>
       <div class="form-group">
         <input class="name" type="text" placeholder="Введите ваше имя">
-        <input class="phone" type="text" placeholder="Введите номер телефона">
+        <input class="phone" id="phone" type="text" placeholder="Введите номер телефона">
         <button class="order">Заказать</button>
       </div>
       <div class="checkbox-group">
@@ -84,8 +87,8 @@
     </ul>
     <div class="filler"></div>
     <ul class="contacts">
-      <li class="email"><img src="img/icons/mail.png"><a href="#">info@eunpro.ru</a></li>
-      <li><img src="img/icons/phone.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
+      <li class="email"><img src="img/mail.png"><a href="#">info@eunpro.ru</a></li>
+      <li><img src="img/phone.png"><a href="#" class="active">+7 (495) 419-25-30</a></li>
     </ul>
     <div class="burger-menu">
       <input id="menu-toggle" type="checkbox" />
@@ -358,8 +361,119 @@
         </div>
       </div>
     </div>
-  </div>
 
+    <!--  -->
+    <div class="table-small">
+      <div class="row header">
+        <div class="col">
+          <span>01</span> Выезд эксперта в праздничные и выходные дни
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Протокол исследований / испытаний
+        </div>
+        <div class="col">
+          от 5000 руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Заключение / отчет (в досудебном порядке)
+        </div>
+        <div class="col">
+          от 5000 руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col title">
+          Заключение эксперта (в судебном порядке)
+        </div>
+        <div class="col">
+          от 5000 руб.
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col">
+          <a href="#">узнать подробнее <img src="img/right.png"></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="table-small">
+      <div class="row header">
+        <div class="col">
+          <span>02</span> Выезд за пределы МКАД
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Протокол исследований / испытаний
+        </div>
+        <div class="col">
+          от 1000 руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Заключение / отчет (в досудебном порядке)
+        </div>
+        <div class="col">
+          от 1000 руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Заключение эксперта (в судебном порядке)
+        </div>
+        <div class="col">
+          от 1000 руб.
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col">
+          <a href="#">узнать подробнее <img src="img/right.png"></a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="table-small">
+      <div class="row header">
+        <div class="col">
+          <span>03</span> Выезд эксперта в ночное время суток
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Протокол исследований / испытаний
+        </div>
+        <div class="col">
+          25% к стоимости работ руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Заключение / отчет (в досудебном порядке)
+        </div>
+        <div class="col">
+          25% к стоимости работ руб.
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          Заключение эксперта (в судебном порядке)
+        </div>
+        <div class="col">
+          25% к стоимости работ руб.
+        </div>
+      </div>
+      <div class="row footer">
+        <div class="col">
+          <a href="#">узнать подробнее <img src="img/right.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!--  -->
   <div class="order-services">
@@ -446,101 +560,105 @@
     <div class="container">
       <h1>Примеры <span>наших работ</span></h1>
       <div class="swiper portfolioSwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(0)">
-            Экспертиза
+          <div class="swiper-wrapper">
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(0)">
+              Экспертиза
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(1)">
+              Обследование
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(2)">
+              Эколог. экспертиза
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(3)">
+              Геодезич. работы
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(4)">
+              Геодезич. работы
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(5)">
+              Эколог. экспертиза
+            </div>
+            <div class="swiper-slide portfolio-button" onclick="currentSlide(6)">
+              Геодезич. работы
+            </div>
           </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(1)">
-            Обследование
-          </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(2)">
-            Эколог. экспертиза
-          </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(3)">
-            Геодезич. работы
-          </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(4)">
-            Геодезич. работы
-          </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(5)">
-            Эколог. экспертиза
-          </div>
-          <div class="swiper-slide portfolio-button" onclick="currentSlide(6)">
-            Геодезич. работы
-          </div>
-        </div>
         <div class="swiper-scrollbar"></div>
       </div>
       <div class="portfolio-item">
-        <div class="text">
-          <div class="title">Геодезические работы 1</div>
-          Тут будет описание проведенной работы. В рамках досудебных и судебных разбирательств между физическими лицами и/или компаниями нередко возникает необходимость в получении компаниями нередко возникает необходимость в получении и  компаниями нередко возникает
-          <ul>
-            <li>Ответственное отношение к проведению каждой независимой оценки</li>
-            <li>Бесплатная консультация и приемлемые цены за услуги</li>
-          </ul>
-          <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
-        </div>
-        <div class="pictures">
-          <img src="img/portfolio.png">
-          <img src="img/portfolio.png">
-          <img src="img/portfolio.png">
-          <img src="img/portfolio.png">
-        </div>
-      </div>
-      <div class="portfolio-item">
-        <div class="text">
-          <div class="title">Геодезические работы 2</div>
-          Тут будет описание проведенной работы. В рамках досудебных и судебных разбирательств между физическими лицами и/или компаниями нередко возникает необходимость в получении компаниями нередко возникает необходимость в получении и  компаниями нередко возникает
-          <ul>
-            <li>Ответственное отношение к проведению каждой независимой оценки</li>
-            <li>Бесплатная консультация и приемлемые цены за услуги</li>
-          </ul>
-          <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
-        </div>
-        <div class="pictures">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
+        <div class="content">
+          <div class="swiper pictureSswiper">
+            <div class="swiper-wrapper">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Геодезические работы 1</div>
+            Тут будет описание проведенной работы. В рамках досудебных и судебных разбирательств между физическими лицами и/или компаниями нередко возникает необходимость в получении компаниями нередко возникает необходимость в получении и  компаниями нередко возникает
+            <ul>
+              <li>Ответственное отношение к проведению каждой независимой оценки</li>
+              <li>Бесплатная консультация и приемлемые цены за услуги</li>
+            </ul>
+            <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
+          </div>
+          <div class="pictures">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+          </div>
         </div>
       </div>
       <div class="portfolio-item">
-        <div class="text">
-          <div class="title">Геодезические работы 3</div>
-          Тут будет описание проведенной работы. В рамках досудебных и судебных разбирательств между физическими лицами и/или компаниями нередко возникает необходимость в получении компаниями нередко возникает необходимость в получении и  компаниями нередко возникает
-          <ul>
-            <li>Ответственное отношение к проведению каждой независимой оценки</li>
-            <li>Бесплатная консультация и приемлемые цены за услуги</li>
-          </ul>
-          <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
-        </div>
-        <div class="pictures">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
-          <img src="img/portfolio.png" class="test">
+        <div class="content">
+          <div class="swiper pictureSswiper">
+            <div class="swiper-wrapper">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+              <img src="img/portfolio.png" class="swiper-slide">
+            </div>
+          </div>
+          <div class="text">
+            <div class="title">Геодезические работы 2</div>
+            Тут будет описание проведенной работы. В рамках досудебных и судебных разбирательств между физическими лицами и/или компаниями нередко возникает необходимость в получении компаниями нередко возникает необходимость в получении и  компаниями нередко возникает
+            <ul>
+              <li>Ответственное отношение к проведению каждой независимой оценки</li>
+              <li>Бесплатная консультация и приемлемые цены за услуги</li>
+            </ul>
+            <a href="#" class="show-more">Смотреть все примеры экспертиз <img src="img/right.png" alt=""></a>
+          </div>
+          <div class="pictures">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+              <img src="img/portfolio.png">
+          </div>
         </div>
       </div>
+
     </div>
   </div>
   <!--  -->
   <div class="rate">
     <div class="rate-item">
-      <div class="number gold-color">5243</div>
-      Выполненные экспертизы
+      <div class="number gold-color number-1" data-max="5243">0</div>
+      Выполненные<br>экспертизы
     </div>
     <div class="rate-item">
-      <div class="number gold-color">873</div>
-      Довольных клиентов
+      <div class="number gold-color number-2" data-max="873">0</div>
+      Довольных<br>клиентов
     </div>
     <div class="rate-item">
-      <div class="number gold-color">1056</div>
-      Довольных клиентов
+      <div class="number gold-color number-3" data-max="1056">0</div>
+      Довольных<br>клиентов
     </div>
     <div class="rate-item">
-      <div class="number gold-color">873</div>
-      Довольных клиентов
+      <div class="number gold-color number-4" data-max="873">0</div>
+      Довольных<br>клиентов
     </div>
   </div>
   <!--  -->
@@ -682,44 +800,58 @@
   <!--  -->
   <div class="container experts">
     <h1>Наши <span>эксперты</span></h1>
-    <div class="experts-items">
-      <div class="expert-item">
-        <img src="img/expert.png" alt="">
-        <div class="name">
-          Артем Силин
+    <div class="swiper expertsSwiper experts-items">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="expert-item">
+            <img src="img/expert.png" alt="">
+            <div class="name">
+              Артем Силин
+            </div>
+            <div class="description">
+              Специалист по экологическим экспертизам
+            </div>
+          </div>
         </div>
-        <div class="description">
-          Специалист по экологическим экспертизам
+        <div class="swiper-slide">
+          <div class="expert-item">
+            <img src="img/expert.png" alt="">
+            <div class="name">
+              Артем Силин
+            </div>
+            <div class="description">
+              Специалист по экологическим экспертизам
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="expert-item">
-        <img src="img/expert.png" alt="">
-        <div class="name">
-          Артем Силин
+        <div class="swiper-slide">
+          <div class="expert-item">
+            <img src="img/expert.png" alt="">
+            <div class="name">
+              Артем Силин
+            </div>
+            <div class="description">
+              Специалист по экологическим экспертизам
+            </div>
+          </div>
         </div>
-        <div class="description">
-          Специалист по экологическим экспертизам
-        </div>
-      </div>
-      <div class="expert-item">
-        <img src="img/expert.png" alt="">
-        <div class="name">
-          Артем Силин
-        </div>
-        <div class="description">
-          Специалист по экологическим экспертизам
-        </div>
-      </div>
-      <div class="expert-item">
-        <img src="img/expert.png" alt="">
-        <div class="name">
-          Артем Силин
-        </div>
-        <div class="description">
-          Специалист по экологическим экспертизам
+        <div class="swiper-slide">
+          <div class="expert-item">
+            <img src="img/expert.png" alt="">
+            <div class="name">
+              Артем Силин
+            </div>
+            <div class="description">
+              Специалист по экологическим экспертизам
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+
+
+
     <a href="#" class="show-all">смотреть всеx</a>
   </div>
   <!--  -->
@@ -733,7 +865,7 @@
           <ul>
             <li class="location">Октябрьская улица, 4к2</li>
             <li class="mail">info@eunpro.ru</li>
-            <li class="phone">+7 (495) 419-25-30</li>
+            <li class="number">+7 (495) 419-25-30</li>
             <li class="time">В будни: с 9:00 до 18:00 без перерыва на обед. В выходные не работаем</li>
           </ul>
         </div>
@@ -752,6 +884,7 @@
     <div class="container">
       <div class="block">
         <img src="img/logo-white.svg" alt="">
+        <div class="description">2006–2021 © ЭУН - Экспертиза и управление недвижимостью. Независимые судебные строительные экспертизы и проектирование объектов по всей России и СНГ</div>
       </div>
       <div class="block">
         <ul class="navigation">
@@ -762,7 +895,7 @@
       </div>
       <div class="filler"></div>
       <div class="block">
-        <ul>
+        <ul class="link-1">
           <li><a href="#">Испытательная лаборатория</a></li>
           <li><a href="#">Экологическая экспертиза</a></li>
           <li><a href="#">Юридические услуги</a></li>
@@ -770,18 +903,23 @@
         </ul>
       </div>
       <div class="block">
-        <ul>
+        <ul class="link-2">
           <li><a href="#">Экспертиза</a></li>
           <li><a href="#">Аудит</a></li>
           <li><a href="#">Обследование</a></li>
           <li><a href="#">Проектирование</a></li>
         </ul>
       </div>
+      <div class="copyright">
+        © ЭУН Все права защищены.
+      </div>
     </div>
   </div>
   <!-- end citate -->
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slidersConfig.js"></script>
+  <script src="js/mask.js"></script>
 </body>
 </html>

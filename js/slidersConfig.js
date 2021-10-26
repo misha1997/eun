@@ -1,13 +1,37 @@
 // rewievs
+var swiper = new Swiper(".expertsSwiper", {
+  slidesPerView: 1,
+  spaceBetween: 11,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  }
+});
+
+// rewievs
 var swiper = new Swiper(".rewievsSwiper", {
-  slidesPerView: 3,
-  spaceBetween: 30
+  slidesPerView: 1,
+  spaceBetween: 50,
+  breakpoints: {
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+  }
 });
 
 // instruments
 var swiper = new Swiper(".instrumentsSwiper", {
-  slidesPerView: 4,
-  spaceBetween: 30
+  slidesPerView: 1,
+  spaceBetween: 30,
+  breakpoints: {
+    500: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  }
 });
 
 // certiifcate
@@ -18,7 +42,7 @@ var swiper = new Swiper(".certiifcateSwiper", {
     el: ".swiper-pagination",
   },
   breakpoints: {
-    400: {
+    500: {
       slidesPerView: 4,
       spaceBetween: 40,
     },
@@ -27,12 +51,28 @@ var swiper = new Swiper(".certiifcateSwiper", {
 
 // porffolio slider
 var swiper = new Swiper(".portfolioSwiper", {
-  slidesPerView: 5,
+  slidesPerView: 2,
   spaceBetween: 14,
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    500: {
+      slidesPerView: 5,
+      spaceBetween: 15,
+    },
+  }
+});
+
+// porffolio slider
+var swiper = new Swiper(".pictureSswiper", {
+    slidesPerView: 1,
+    spaceBetween: 14
 });
 currentSlide(0);
 function currentSlide(n) {
@@ -40,11 +80,36 @@ function currentSlide(n) {
   var buttons = document.getElementsByClassName(" portfolio-button");
   for (let i = 0; i < slides.length; i++) {
     if(i == n) {
-      slides[i].style.display = "grid";
+      slides[i].style.display = "block";
       buttons[i].classList.add('active');
     } else {
       slides[i].style.display = "none";
       buttons[i].classList.remove('active');
     }
   }
+}
+
+// 
+
+window.addEventListener('scroll', function onScroll() {
+  var rate = document.querySelector('.rate'),
+  rateTop = rate.getBoundingClientRect().top
+  if(rateTop <= 0) {
+    this.removeEventListener('scroll', onScroll);
+    number('number-1');
+    number('number-2');
+    number('number-3');
+    number('number-4');
+  }
+});
+
+function number(className) {
+  var number = document.querySelector('.'+className),
+    start = +number.innerHTML, end = +number.dataset.max;
+    var interval = setInterval(function() {
+        number.innerHTML = ++start;
+        if(start == end) {
+            clearInterval(interval);
+        }
+    }, 5);
 }
