@@ -1075,9 +1075,15 @@ button.order:active {
   font-weight: bold;
   color: #fff;
 }
-.certificate img.swiper-slide:hover {
+.certificate .swiper-slide img {
+  width: 100%;
+}
+.certificate .swiper-slide img:hover {
   opacity: 0.5;
-  background: #000;
+}
+.certificate .swiper-slide:hover {
+  background: #000 url('../img/magnifier.png') no-repeat;
+  background-position: center center;
 }
 .certificate .swiper-wrapper {
   margin-bottom: 50px;
