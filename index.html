@@ -3,8 +3,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/swiper-bundle.css"/>
+  <link href="css/swiper-bundle.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/gallery.css" rel="stylesheet">
   <title>ЭУН</title>
 </head>
 <body>
@@ -134,11 +135,13 @@
     </ul>
 
     <div class="container">
-      <h1>
-        Проведение <br><span class="gold-color">независимой <br> экспертизы</span> и оценки
-      </h1>
-      <h2>Судебные и внесудебные экспертизы, а также исследования по различным вопросам</h2>
-      <button class="order" onclick="showHideModal()">Заказать экспертизу</button>
+      <div class="content">
+        <h1>
+          Проведение <br><span class="gold-color">независимой <br> экспертизы</span> и оценки
+        </h1>
+        <h2>Судебные и внесудебные экспертизы, а также исследования по различным вопросам</h2>
+        <button class="order" onclick="showHideModal()">Заказать экспертизу</button>
+      </div>
     </div>
     </div>
   </div>
@@ -148,7 +151,7 @@
     <div class="container block-skills">
       <div class="col">
         <div class="title">Оценочная компания</div>
-        <h1><span>"Экспертиза <br>и управление</span> недвижимостью"</h1>
+        <h1><span>"Экспертиза и управление</span> недвижимостью"</h1>
         <h6>Услуги независимой экспертизы <br>и оценки в Москве</h6>
       </div>
       <div class="col skills">
@@ -548,31 +551,37 @@
       <h1>Наши <span>сертификаты</span></h1>
       <a href="#">смотреть все</a>
     </div>
-    <div class="swiper certiifcateSwiper container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
+    <div class="swiper-container">
+      <div class="swiper certififcateSwiper container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
+          <div class="swiper-slide">
+            <img class="mklbItem" src="img/certiifcate.png">
+          </div>
         </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
-        <div class="swiper-slide">
-          <img src="img/certiifcate.png">
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-pagination"></div>
+      <div class="navigation">
+        <div class="swiper-prev"></div>
+        <div class="swiper-next"></div>
+      </div>
     </div>
   </div>
   <!-- end certificate -->
@@ -581,7 +590,8 @@
     <div class="portfolio">
       <div class="container">
         <h1>Примеры <span>наших работ</span></h1>
-        <div class="swiper portfolioSwiper">
+        <div class="swiper-container">
+          <div class="swiper portfolioSwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide portfolio-button" onclick="currentSlide(0)">
                 Экспертиза
@@ -605,7 +615,10 @@
                 Геодезич. работы
               </div>
             </div>
-          <div class="swiper-scrollbar"></div>
+            <div class="swiper-scrollbar"></div>
+          </div>
+          <div class="swiper-next"></div>
+          <div class="swiper-prev"></div>
         </div>
         <div class="portfolio-item">
           <div class="content">
@@ -613,19 +626,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-1.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-1.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-2.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-2.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-3.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-3.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-4.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-4.png">
                 </div>
               </div>
             </div>
@@ -652,19 +665,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-1.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-1.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-2.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-2.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-3.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-3.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-4.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-4.png">
                 </div>
               </div>
             </div>
@@ -691,19 +704,19 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-1.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-1.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-2.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-2.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-3.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-3.png">
                 </div>
                 <div class="swiper-slide">
                   <div class="magnifier"></div>
-                  <img src="img/portfolio/portfolio-4.png">
+                  <img class="mklbItem" src="img/portfolio/portfolio-4.png">
                 </div>
               </div>
             </div>
@@ -852,7 +865,7 @@
             </div>
           </div>
           <div class="swiper-slide">
-            <div class="rewievs-item">
+          <div class="rewievs-item">
               <div class="header">
                 <img src="img/review.png">
                 <div class="info">
@@ -949,7 +962,7 @@
   <div class="map">
     <div class="container">
       <div class="contacts">
-        <a href="#"><img src="img/play.png" alt=""> Посмотреть <br> на карте</a>
+        <a href="https://goo.gl/maps/5jHy7Vuc328G9aoR8"><img src="img/play.png" alt=""> Посмотреть <br> на карте</a>
         <div class="contact">
           <div class="title">Москва - ООО "ЭУН"</div>
           Независимые судебные строительные экспертизы и проектирование объектов по всей России и СНГ
@@ -1010,6 +1023,7 @@
   </div>
   <!-- end footer -->
   <script src="https://unpkg.com/imask"></script>
+  <script src="js/gallery.js"></script> 
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/slidersConfig.js"></script>

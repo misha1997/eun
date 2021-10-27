@@ -95,11 +95,25 @@ a.show-all {
   border-radius: 4px;
   padding: 15px 44px;
 }
+.swiper-prev, .swiper-next {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+.swiper-prev {
+  background: url('../img/left-icon.png') no-repeat;
+  background-position: center center;
+}
+.swiper-next {
+  background: url('../img/right-icon.png') no-repeat;
+  background-position: center center;
+}
 /* header */
 .header {
   min-height: 70px;
   display: flex;
   align-items: center;
+  padding: 0 30px;
 }
 .header a {
   font-weight: 500;
@@ -428,17 +442,21 @@ button.order:active {
 .main .bg {
   background: url('../img/person.png') no-repeat;
   background-position: right 25px bottom;
-  height: 100%;
+  height: 710px;
 }
 @media screen and (max-width: 1300px) {
   .main .bg {
     background-size: 50%;
+  }
+  .main .content {
+    padding: 0 30px;
   }
 }
 @media screen and (max-width: 1000px) {
   .main .bg {
     background-size: 120%;
     background-position: right -40px bottom;
+    height: 640px;
   }
   .main .container button {
     margin: 0;
@@ -512,8 +530,6 @@ button.order:active {
     background: linear-gradient(0deg, rgba(0,0,0,0.80) 0%, rgba(233,148,148,0) 46%);
     background-size: 120%;
     background-position: bottom;
-    padding-left: 12px;
-    padding-right: 12px;
   }
   .main .container h1, .main .container h1 span {
     font-weight: bold;
@@ -593,21 +609,43 @@ button.order:active {
   color: #486DF1;
   font-weight: bold;
 }
+@media screen and (max-width: 1300px) {
+  .block-skills {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .block-skills h1, .block-skills h1 span {
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .block-skills {
     display: block;
     padding: 100px 30px 0 30px;
   }
   .block-skills .skills {
-    display: block;
     margin-top: 44px;
-  }
-  .block-skills h1 {
-    line-height: 37px;
   }
   .block-skills h6 {
     font-size: 16px;
     line-height: 26px;
+  }
+  .block-skills .number {
+    width: 60px;
+    height: 60px;
+  }
+  .block-skills .number span {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .block-skills .skills {
+    display: block;
+  }
+  .block-skills h1, .block-skills h1 span {
+    font-size: 32px;
+    line-height: 45px;
   }
 }
 /* end block 2 */
@@ -621,8 +659,12 @@ button.order:active {
   display: flex;
   line-height: 30px;
 }
+.citate span {
+  font-weight: 700;
+}
 .citate img {
   margin-right: 42px;
+  object-fit: contain;
 }
 .citate p {
   font-size: 18px;
@@ -633,7 +675,10 @@ button.order:active {
 @media screen and (max-width: 1000px) {
   .citate {
     position: relative;
-    margin-bottom: 100px;
+    margin-bottom: 47px;
+    padding: 36px 30px;
+    font-size: 14px;
+    line-height: 24px;
   }
   .citate img {
     position: absolute;
@@ -727,9 +772,20 @@ button.order:active {
 .service-item > .content:hover > .title {
   margin: 0 0 11px 0;
 }
+@media screen and (max-width: 600px) {
+  .services .rows .service-item .content {
+    justify-content: space-between;
+  }
+  .services .rows .service-item .content .price {
+    margin: 0;
+  }
+}
 @media screen and (max-width: 1000px) {
   .services .rows {
     display: block;
+  }
+  .services h1 {
+    margin-bottom: 20px;
   }
   .services .rows .service-item {
     padding: 17px 12px;
@@ -748,17 +804,19 @@ button.order:active {
     display: flex;
     padding-left: 20px;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
   }
   .services .rows .service-item .content .title {
     font-size: 12px;
     text-align: left;
     margin-bottom: 7px;
+    padding-right: 15px;
   }
   .services .rows .service-item .content .price {
     display: block;
     text-align: left;
+    margin: 20px 0;
   }
   .services .rows .service-item .content .order {
     display: block;
@@ -818,6 +876,9 @@ button.order:active {
 @media screen and (max-width: 1000px) {
   .sub-services {
     margin-bottom: 60px;
+  }
+  .sub-services h1 {
+    line-height: 40px;
   }
   .sub-services .table {
     display: none;
@@ -953,14 +1014,17 @@ button.order:active {
 @media screen and (max-width: 1000px) {
   .order-services {
     text-align: center;
+    padding: 41px 20px;
   }
-  .order-services {
-    padding: 41px 0;
+  .order-services h6 {
+    font-size: 16px;
+    line-height: 26px;
+    width: 238px;
   }
   .order-services .form-group {
     flex-direction: column;
     align-content: center;
-    width: 95%;
+    width: 450px;
   }
   .order-services .form-group button {
     width: 100%;
@@ -971,7 +1035,16 @@ button.order:active {
     width: 100%;
   }
   .order-services .checkbox-group {
-    display: block;
+    align-items: baseline;
+  }
+  .order-services .checkbox-group label {
+    display: inline-block;
+    text-align: left;
+  }
+}
+@media screen and (max-width: 500px) {
+  .order-services .form-group {
+    width: 100%;
   }
 }
 /* end order-services */
@@ -1046,12 +1119,26 @@ button.order:active {
 .how-work .steps .step-item .description {
   padding-bottom: 30px;
 }
+@media screen and (max-width: 1300px) {
+  .how-work .container {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .how-work img.pic1 {
+    width: 400px;
+    height: auto;
+  }
+  .how-work img.pic2 {
+    top: 107px;
+    right: 180px;
+    width: 300px;
+    height: auto;
+  }
+}
 @media screen and (max-width: 1000px) {
   .how-work {
     padding: 42px 20px;
-  }
-  .how-work img {
-    display: none;
   }
   .how-work .steps .step-item .title {
     font-size: 16px;
@@ -1060,6 +1147,22 @@ button.order:active {
   .how-work .steps .step-item .description {
     font-size: 14px;
     line-height: 175%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .how-work img.pic1 {
+    width: 300px;
+    height: auto;
+  }
+  .how-work img.pic2 {
+    top: 83px;
+    right: 150px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .how-work img {
+    display: none;
   }
 }
 /* end how-work */
@@ -1101,10 +1204,31 @@ button.order:active {
   background-position: center center;
 }
 .certificate .swiper-wrapper {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .certificate .swiper-pagination-bullet {
   background: #fff;
+}
+.certificate .swiper-pagination {
+  display: none;
+}
+.certificate .navigation {
+  display: flex;
+  justify-content: center;
+}
+.certificate .navigation > .swiper-prev, .certificate .navigation > .swiper-next {
+  margin: 0 15px;
+}
+.certificate .navigation > .swiper-prev {
+  background: url('../img/left-icon-white.png') no-repeat;
+  background-position: center center;
+}
+.certificate .navigation > .swiper-next {
+  background: url('../img/right-icon-white.png') no-repeat;
+  background-position: center center;
+}
+.certificate .navigation > .swiper-next {
+
 }
 @media screen and (max-width: 1000px) {
   .certificate {
@@ -1131,10 +1255,25 @@ button.order:active {
   padding-top: 150px;
   padding-bottom: 160px;
 }
+.portfolio .swiper-container {
+  position: relative;
+  margin-top: 34px;
+}
 .portfolio h1 {
   text-align: center;
   font-weight: bold;
   color: #000;
+}
+.portfolio .swiper-prev, .portfolio .swiper-next {
+  position: absolute;
+}
+.portfolio .swiper-prev {
+  top: 27px;
+  left: 0;
+}
+.portfolio .swiper-next {
+  top: 27px;
+  right: 0;
 }
 .portfolio .portfolioSwiper .swiper {
   overflow: hidden;
@@ -1148,7 +1287,6 @@ button.order:active {
 }
 .portfolio .portfolioSwiper .swiper-wrapper {
   margin-bottom: 20px;
-  margin-top: 34px;
 }
 .portfolio .portfolioSwiper .swiper-scrollbar {
   left: 0 !important;
@@ -1183,6 +1321,7 @@ button.order:active {
   font-weight: 500;
   font-size: 16px;
   line-height: 175%;
+  align-items: start;
 }
 .portfolio .portfolio-item .title {
   font-weight: 600;
@@ -1215,7 +1354,7 @@ button.order:active {
   display: block;
 }
 .portfolio .portfolio-item .pictures img:last-child {
-  width: 471px;
+  width: calc(100% - 210px);
   height: 100%;
   position: absolute;
   right: 0;
@@ -1248,8 +1387,15 @@ button.order:active {
 .portfolio .portfolio-item .content .pictureSswiper .swiper-slide img {
   height: 100%;
 }
-
+@media screen and (max-width: 1300px) {
+  .portfolio .container {
+    padding: 0 20px;
+  }
+}
 @media screen and (max-width: 1000px) {
+  .portfolio .swiper-prev, .portfolio .swiper-next {
+    display: none;
+  }
   .portfolio .portfolioSwiper .swiper-wrapper {
     overflow: visible;
   }
@@ -1511,7 +1657,6 @@ button.order:active {
 .experts-items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin-bottom: 43px;
 }
 .experts .expert-item {
   background: linear-gradient(0deg, #0B1222, #0B1222);
@@ -1520,6 +1665,8 @@ button.order:active {
   color: #fff;
   padding-bottom: 38px;
   margin: 0 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .experts .expert-item img {
   background: linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
@@ -1662,6 +1809,10 @@ button.order:active {
   }
   .information .title {
     font-size: 18px;
+    line-height: 26px;
+  }
+  .information {
+    font-size: 14px;
     line-height: 26px;
   }
 }
