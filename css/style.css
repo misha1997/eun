@@ -293,6 +293,9 @@ body >.header {
   margin-top: 20px;
   margin-left: 15px;
 }
+.menubox .button-order {
+  height: 160px;
+}
 /* end menu mobile */
 /* banner */
 .main {
@@ -1959,10 +1962,14 @@ body > .footer a {
     width: 100%;
   }
   #modal .content .checkbox-group {
-    display: block;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
   }
   #modal .content .checkbox-group label {
-    display: block;
+    display: inline-block;
+    text-align: left;
+    line-height: 24px;
   }
   #modal button.close {
     background: url('../img/close-white.png') no-repeat;

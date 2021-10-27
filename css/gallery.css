@@ -65,7 +65,13 @@ section.imageContainer {
     width: auto;
     height: 100%;
 }
-
+@media screen and (max-width: 500px) {
+  #mkLightboxContainer img,
+  #mkLightboxContainer video {
+    height: auto;
+    width: 90%;
+  }
+}
 #mkLightboxContainer #yt-video {
     width: 75vw;
     height: 42.1875vw; /* 75*9/16 */
