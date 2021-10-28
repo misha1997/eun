@@ -11,10 +11,10 @@ var swiper = new Swiper(".expertsSwiper", {
       spaceBetween: 20,
     },
     800: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 10,
     },
-    1000: {
+    1200: {
       slidesPerView: 4,
       spaceBetween: 10,
     },
@@ -24,22 +24,14 @@ var swiper = new Swiper(".expertsSwiper", {
 // rewievs
 var swiper = new Swiper(".rewievsSwiper", {
   slidesPerView: 1,
-  spaceBetween: 85,
+  spaceBetween: 15,
   pagination: {
     el: ".swiper-pagination",
   },
   breakpoints: {
     700: {
       slidesPerView: 2,
-      spaceBetween: 175,
-    },
-    800: {
-      slidesPerView: 2,
-      spaceBetween: 140,
-    },
-    900: {
-      slidesPerView: 2,
-      spaceBetween: 85,
+      spaceBetween: 20,
     },
     1000: {
       slidesPerView: 3,
@@ -51,22 +43,26 @@ var swiper = new Swiper(".rewievsSwiper", {
 // instruments
 var swiper = new Swiper(".instrumentsSwiper", {
   slidesPerView: 1,
-  spaceBetween: 50,
+  spaceBetween: 35,
   pagination: {
     el: ".swiper-pagination",
   },
   breakpoints: {
     700: {
       slidesPerView: 2,
-      spaceBetween: 85,
+      spaceBetween: 24,
     },
     800: {
       slidesPerView: 2,
-      spaceBetween: 60,
+      spaceBetween: 24,
     },
     1000: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+    1200: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 24,
     },
   }
 });
@@ -83,12 +79,15 @@ var swiper = new Swiper(".certififcateSwiper", {
     prevEl: document.querySelector(".certificate").querySelector(".swiper-prev"),
   },
   breakpoints: {
-    500: {
+    600: {
       slidesPerView: 2,
       spaceBetween: 40,
+      pagination: {
+        el: ".swiper-pagination",
+      },
     },
     1000: {
-      slidesPerView: 4,
+      slidesPerView: 3,
       spaceBetween: 40,
     },
   }

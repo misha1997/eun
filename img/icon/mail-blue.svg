@@ -1,22 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="16px" viewBox="0 0 20 16" enable-background="new 0 0 20 16" xml:space="preserve">  <image id="image0" width="20" height="16" x="0" y="0"
-    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAMAAAAhxq8pAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
-AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABa1BMVEUAAABxmfptlvdqlfhl
-kfdei/hTg/dHePhCdfdAc/dwmPdij/dRgfdOfvdMfPc/c/Zoj/dmkPdbifdZh/hLe/dIePdCdPc/
-cvdvmfhtl/hkj/hgjPZPf/ZLe/Zgh/deifdRgPdShP8/c/dnkfhah/dZh/dXhfhUg/dKevhijvZQ
-gO9QgP9NffdNffddi/ZggO9QgPZKevhCdPhAc/ddifdVhvdVg/dPfvhCdfdgjfdVhPdjj/hWhfdM
-fPhlkfhRgfhwmfZgjfhHePdAc/dumfdtlvdCdfdAcvdokvdjjvdhjfdbiPdZhvdWhPdRgPdPfvdN
-ffdKe/dFd/dtl/drlfhmkPdeivdXhfhUgvdKevdIefdFdvdCdfdwmPdtlvdei/dVg/dMfPZZh/dU
-g/dSgfc/c/Zul/dcifdXhfdDdfdvmPdlkPdmkfdgjPdSgfhMffdAc/ZPf/dAc/dhjPdqlPdok/dr
-lfdHeff////iVVccAAAASHRSTlMAX+7+/v7+/t9f3/7+/v7vIN/+/r9A/v7+/nDv73AgoL8f/m9g
-395Ab98QED+/jxCP/v7+3z/f/v7+/v7+/v7+7/7+31/f7mA8FRIIAAAAAWJLR0R41tvkRgAAAAlw
-SFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB+UKGxUdEcjExdsAAAEdSURBVBjTHY9nW8JwDMTPgRNR
-cQAOXDhx40bco7sgAsUWihRECgJ1fn3z51WSe37JXdDR2cV184JLlOQeRY0nep/6+jGQfOZSg0Ja
-lDKae8iTfdGNYeTyGBnlBdM7liko6uv4BCZ98AcATE2bYlG2SjOzNBhl5N6oIjhXkd61+QXWVxdh
-54ElakPLK6tU1kj0wU4CtfUgsBEGNrcSJJbbZJ3/2N4BwruqZw/YjzB3EoX0QejwqHHczAInLfhp
-PcWfmqJ0ZilOk8hqBDZFqkUFsyKdayU1RqTx2RYvovRRUdZKDltnOZk7/0WkTG/GmZGvfZPcXV4i
-Lx0PI1u4Cnz/1PlrdtNqqLHEjW7c4u7+l6NI5C4X3Go8+6c/PP4DVopGArI5+VwAAAAldEVYdGRh
-dGU6Y3JlYXRlADIwMjEtMTAtMjdUMTg6Mjk6MTcrMDM6MDAv22AoAAAAJXRFWHRkYXRlOm1vZGlm
-eQAyMDIxLTEwLTI3VDE4OjI5OjE3KzAzOjAwXobYlAAAAABJRU5ErkJggg==" />
+<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 14H16V5.25L10 9L4 5.25V14H2V2H3.2L10 6.25L16.8 2H18V14ZM18 0H2C0.89 0 0 0.89 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H18C18.5304 16 19.0391 15.7893 19.4142 15.4142C19.7893 15.0391 20 14.5304 20 14V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" fill="url(#paint0)"/>
+<defs>
+<linearGradient id="paint0" x1="7.45058e-08" y1="8" x2="20" y2="8" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7199F7"/>
+<stop offset="1" stop-color="#3F72F6"/>
+</linearGradient>
+</defs>
 </svg>

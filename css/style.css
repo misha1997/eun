@@ -447,15 +447,18 @@ button.order:active {
   background-position: right 25px bottom;
   height: 710px;
 }
+.main h1 br {
+  display: none;
+}
 @media screen and (max-width: 1300px) {
   .main .bg {
     background-size: 50%;
   }
-  .main .content {
-    padding: 0 30px;
-  }
 }
 @media screen and (max-width: 1000px) {
+  .main h1 br {
+    display: block;
+  }
   .main .bg {
     background-size: 120%;
     background-position: right -40px bottom;
@@ -518,7 +521,9 @@ button.order:active {
   .main h2 {
     font-size: 16px;
     line-height: 26px;
-    width: 100%;
+    width: 90%;
+    margin: auto;
+    margin-top: 11px;
     margin-bottom: 217px;
   }
   .main::after {
@@ -625,7 +630,7 @@ button.order:active {
 @media screen and (max-width: 1000px) {
   .block-skills {
     display: block;
-    padding: 100px 30px 0 30px;
+    padding: 100px 20px 0 20px;
   }
   .block-skills .skills {
     margin-top: 44px;
@@ -703,6 +708,8 @@ button.order:active {
     border-left: 0;
     text-align: center;
     padding: 0;
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 /* end citate */
@@ -1026,6 +1033,10 @@ button.order:active {
     font-size: 16px;
     line-height: 26px;
     width: 238px;
+    margin-bottom: 24px;
+  }
+  .order-services h1 {
+    line-height: 50px;
   }
   .order-services .form-group {
     flex-direction: column;
@@ -1042,11 +1053,13 @@ button.order:active {
   }
   .order-services .checkbox-group {
     align-items: baseline;
+    padding: 0 40px;
   }
   .order-services .checkbox-group label {
     display: inline-block;
     text-align: left;
-    line-height: 24px;
+    line-height: 23px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1085,7 +1098,7 @@ button.order:active {
 .how-work h1 {
   font-weight: bold;
   line-height: 66px;
-  margin-bottom: 18px;
+  margin-bottom: 25px;
 }
 .how-work .steps {
   max-width: 410px;
@@ -1132,6 +1145,9 @@ button.order:active {
   }
 }
 @media screen and (max-width: 1200px) {
+  .how-work .container {
+    padding: 0;
+  }
   .how-work img.pic1 {
     width: 400px;
     height: auto;
@@ -1200,8 +1216,23 @@ button.order:active {
   font-weight: bold;
   color: #fff;
 }
+.certificate .swiper-slide {
+  position: relative;
+}
 .certificate .swiper-slide img {
   width: 100%;
+}
+.certificate .swiper-slide .magnifier {
+  width: 65px;
+  height: 47px;
+  background: rgba(29, 29, 29, 0.8) url('../img/magnifier.png') no-repeat;
+  background-size: 27px;
+  background-position: center center;
+  backdrop-filter: blur(4px);
+  border-radius: 3px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .certificate .swiper-slide img:hover {
   opacity: 0.5;
@@ -1239,8 +1270,16 @@ button.order:active {
     padding: 42px 20px;
     margin-bottom: 40px;
   }
+  .certificate .swiper-wrapper {
+    padding-bottom: 40px;
+  }
+  .certificate .swiper-pagination {
+    display: block;
+    z-index: 1;
+  }
   .certificate .container {
     display: block;
+    width: 100%;
   }
   .certificate h1 {
     text-align: center;
@@ -1249,8 +1288,11 @@ button.order:active {
     display: none;
   }
   .certificate .certiifcateSwiper  {
-    width: 70%;
+    width: 100%;
     padding-bottom: 10px;
+  }
+  .certificate .navigation > .swiper-prev, .certificate .navigation > .swiper-next {
+    display: none;
   }
 }
 /* end certificate */
@@ -1397,6 +1439,12 @@ button.order:active {
   }
 }
 @media screen and (max-width: 1000px) {
+  .portfolio .portfolioSwiper {
+    width: 100%;
+  }
+  .portfolio .container {
+    padding: 0;
+  }
   .portfolio .swiper-prev, .portfolio .swiper-next {
     display: none;
   }
@@ -1423,6 +1471,7 @@ button.order:active {
   }
   .portfolio .portfolio-button {
     text-align: center;
+    font-size: 14px;
   }
 
   .portfolio .portfolio-item .content {
@@ -1439,6 +1488,12 @@ button.order:active {
   .portfolio .portfolio-item .text {
     margin-top: 20px;
     padding: 0;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .portfolio .portfolio-item .title {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
 }
 /* end portfolio */
@@ -1477,6 +1532,13 @@ button.order:active {
   margin-bottom: 10px;
 }
 @media screen and (max-width: 1000px) {
+  .rate {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .rate .rate-item .number {
+    font-size: 43px;
+  }
   .rate {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1560,31 +1622,37 @@ button.order:active {
     padding: 0 20px 60px 20px;
   }
   .instruments .instrumentsSwiper {
-    width: 70%;
+    width: 100%;
     overflow: visible;
+  }
+  .instruments h1 {
+    line-height: 40px;
   }
 }
 /* end instruments */
 /* rewievs */
-.rewievs {
+.rewievs-bg {
   overflow: hidden;
-  text-align: center;
-  padding-bottom: 137px;
 }
-.rewievs .title {
+.rewievs-bg .title {
   background: #fff url('../img/order-bg.png') no-repeat;
   background-size: cover;
   padding-top: 143px;
-  padding-bottom: 216px;
+  padding-bottom: 51px;
   text-align: center;
+  height: 285px;
 }
-.rewievs h1 {
+.rewievs-bg h1 {
   font-weight: bold;
   color: #fff;
 }
+.rewievs {
+  text-align: center;
+  padding-bottom: 137px;
+}
 .rewievs .rewievsSwiper {
-  margin-top: -163px;
-  margin-bottom: 36px;
+  margin-top: -180px;
+  margin-bottom: 20px;
 }
 .rewievs .swiper-wrapper {
   padding-bottom: 50px;
@@ -1631,16 +1699,24 @@ button.order:active {
   text-decoration-line: underline;
 }
 @media screen and (max-width: 1000px) {
-  .rewievs .title {
+  .rewievs {
+    padding: 0 20px 60px 20px;
+  }
+  .rewievs-bg .title {
     padding-top: 56px;
-    padding-bottom: 149px;
+    padding-bottom: 33px;
   }
   .rewievs .rewievsSwiper {
-    width: 70%;
-    overflow: visible;
+    width: 100%;
   }
-  .rewievs h1, .rewievs {
+  .rewievs-bg h1, .rewievs {
     padding-bottom: 77px;
+  }
+  .rewievs .rewievs-item {
+    font-size: 12px;
+  }
+  .rewievs .rewievs-item .header .name {
+    font-size: 14px;
   }
 }
 /* end rewievs */
@@ -1671,6 +1747,7 @@ button.order:active {
   margin: 0 10px;
   padding-left: 20px;
   padding-right: 20px;
+  width: 100%;
 }
 .experts .expert-item img {
   background: linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
@@ -1697,9 +1774,13 @@ button.order:active {
   line-height: 21px;
 }
 @media screen and (max-width: 1000px) {
+  .experts {
+    padding: 0 20px 59px 20px;
+  }
   .expertsSwiper {
-    width: 70%;
+    width: 100%;
     overflow: visible;
+    margin-bottom: 20px;
   }
   .experts .expert-item {
     margin: 0;
@@ -1708,25 +1789,50 @@ button.order:active {
 /* end experts */
 /* map */
 .map {
-  height: 607px;
-  background: url('../img/map.png') no-repeat;
   background-size: cover;
   margin-bottom: 79px;
+  position: relative;
+}
+.map .info-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/map.png') no-repeat;
+}
+.map .info-container-2 {
+  background: none;
+  right: 4%;
+  width: auto;
+  height: auto;
+  height: 100%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.map > .info-container-2 > .container > .contacts > .button-map {
+  display: none;
+}
+.map > .info-container-2 > .container > .contacts {
+  justify-content: flex-end;
 }
 .map .container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   height: 100%;
 }
 .map .contacts {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-.map .contacts a {
+.map .contacts .button-map {
+  cursor: pointer;
   display: flex;
-  width: 100%;
+  width: auto;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1734,8 +1840,9 @@ button.order:active {
   font-weight: 600;
   font-size: 22px;
   text-align: left;
+  margin: auto;
 }
-.map .contacts a img {
+.map .contacts .button-map img {
   margin-right: 30px;
 }
 .map .contacts .contact {
@@ -1747,7 +1854,7 @@ button.order:active {
   font-size: 14px;
   line-height: 175%;
   color: #FFFFFF;
-  width: 474px;
+  width: 350px;
 }
 .map .contacts .contact ul li {
   padding-left: 40px;
@@ -1777,7 +1884,9 @@ button.order:active {
 }
 @media screen and (max-width: 1000px) {
   .map {
-    height: 500px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
   }
   .map .container {
     display: block;
@@ -1792,6 +1901,19 @@ button.order:active {
     padding: 20px;
     border-radius: 0;
     width: auto;
+  }
+  .map .info-container .button-map {
+    height: 607px;
+  }
+  .map .info-container {
+    position: relative;
+    margin-top: -607px;
+  }
+  .map .info-container-2 {
+    position: relative;
+    transform: translateY(0%);
+    right: 0;
+    margin-top: 0;
   }
 }
 /* end map */
@@ -1809,7 +1931,7 @@ button.order:active {
 }
 @media screen and (max-width: 1000px) {
   .information {
-    padding: 180px 20px 0 20px;
+    padding: 0 20px;
   }
   .information .title {
     font-size: 18px;
@@ -1857,6 +1979,7 @@ body > .footer a {
 .footer .copyright {
   display: none;
   color: #fff;
+  font-size: 10px;
 }
 @media screen and (max-width: 1000px) {
   .footer .copyright {
@@ -1885,6 +2008,7 @@ body > .footer a {
   }
   .footer .container ul.navigation li {
     background: none;
+    padding-left: 0;
   }
   .footer .container ul.link-1 {
     display: none;
@@ -1949,6 +2073,10 @@ body > .footer a {
   }
   #modal .content h1, #modal .content h6, #modal .content .checkbox-group label, #modal .content a {
     color: #fff;
+  }
+  #modal .content h6 {
+    font-size: 16px;
+    line-height: 26px;
   }
   #modal .content .form-group {
     display: block;

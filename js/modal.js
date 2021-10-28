@@ -24,3 +24,7 @@ menuToogleBtn.addEventListener("click", function() {
 function myFunction() {
   document.getElementById("dropdown").classList.toggle("active");
 }
+
+function hideMap() {
+  document.getElementById("map").classList.toggle('info-container-2');
+}
