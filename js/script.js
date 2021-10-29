@@ -59,7 +59,10 @@ function dropdownMenu() {
 
 // map
 function hideMap() {
-  document.querySelector(".map-bg").style.display = 'none';
+  document.querySelector(".map-bg").style.opacity = '0';
+  setTimeout(function() {
+    document.querySelector(".map-bg").style.display = 'none';
+  }, 1000);
 }
 
 // table

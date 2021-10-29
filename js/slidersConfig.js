@@ -28,6 +28,10 @@ var swiper = new Swiper(".rewievsSwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+  navigation: {
+    nextEl: document.querySelector(".rewievs").querySelector(".swiper-next"),
+    prevEl: document.querySelector(".rewievs").querySelector(".swiper-prev"),
+  },
   breakpoints: {
     700: {
       slidesPerView: 2,
@@ -46,6 +50,10 @@ var swiper = new Swiper(".instrumentsSwiper", {
   spaceBetween: 11,
   pagination: {
     el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: document.querySelector(".instruments").querySelector(".swiper-next"),
+    prevEl: document.querySelector(".instruments").querySelector(".swiper-prev"),
   },
   breakpoints: {
     700: {
