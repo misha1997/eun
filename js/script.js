@@ -59,7 +59,7 @@ function dropdownMenu() {
 
 // map
 function hideMap() {
-  document.getElementById("map").classList.toggle('info-container-2');
+  document.querySelector(".map-bg").style.display = 'none';
 }
 
 // table
