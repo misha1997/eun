@@ -14,7 +14,7 @@
     <div class="menubox" id="menubox">
       <ul class="menu">
         <li id="dropdown">
-          <a onclick="myFunction()" href="#">Экспертиза</a>
+          <a onclick="dropdownMenu()" href="#">Экспертиза</a>
           <ul>
             <li>
               <a href="#">Землеустроительная эскпертиза</a>
@@ -313,184 +313,72 @@
     <div class="container sub-services">
       <h1>Дополнительные услуги</h1>
       <!-- table desctop -->
-      <div class="table">
-        <div class="row header">
+      <div class="table" id="table">
+        <div class="row title">
+          <div class="col header"></div>
           <div class="col">
-            Услуга
-          </div>
-          <div class="col">
-            Протокол исследований / испытаний
-          </div>
-          <div class="col">
-            Заключение / отчет (в досудебном порядке)
-          </div>
-          <div class="col">
-            Заключение эксперта (в судебном порядке)
-          </div>
-        </div>
-        <div class="row">
-          <div class="col title">
             Выезд эксперта в праздничные и выходные дни
           </div>
           <div class="col">
-            от 5000 руб.
-          </div>
-          <div class="col">
-            от 5000 руб.
-          </div>
-          <div class="col">
-            от 5000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col title">
             Выезд за пределы МКАД
           </div>
           <div class="col">
-            от 1000 руб.
-          </div>
-          <div class="col">
-            от 1000 руб.
-          </div>
-          <div class="col">
-            от 1000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col title">
             Выезд эксперта в ночное время суток
           </div>
-          <div class="col">
-            25% к стоимости работ руб.
+        </div>
+        <div>
+          <div class="row">
+            <div class="col header">
+              Протокол исследований / испытаний
+            </div>
+            <div class="col">
+              от 5000 руб.
+            </div>
+            <div class="col">
+              от 1000 руб.
+            </div>
+            <div class="col">
+              25% к стоимости работ руб.
+            </div>
           </div>
-          <div class="col">
-            25% к стоимости работ руб.
+          <a href="#" class="details">Подробнее</a>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col header">
+              Заключение / отчет (в досудебном порядке)
+            </div>
+            <div class="col">
+              от 5000 руб.
+            </div>
+            <div class="col">
+              от 1000 руб.
+            </div>
+            <div class="col">
+              25% к стоимости работ руб.
+            </div>
           </div>
-          <div class="col">
-            25% к стоимости работ руб.
+          <a href="#" class="details">Подробнее</a>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col header">
+              Заключение эксперта (в судебном порядке)
+            </div>
+            <div class="col">
+              от 5000 руб.
+            </div>
+            <div class="col">
+              от 1000 руб.
+            </div>
+            <div class="col">
+              25% к стоимости работ руб.
+            </div>
           </div>
+          <a href="#" class="details">Подробнее</a>
         </div>
       </div>
-      <!-- table mobile -->
-      <div class="table-small">
-        <div class="row header">
-          <div class="col">
-            <span>01</span>
-          </div>
-          <div class="col title">
-            Выезд эксперта в праздничные и выходные дни
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Протокол исследований / испытаний
-          </div>
-          <div class="col">
-            от 5000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Заключение / отчет (в досудебном порядке)
-          </div>
-          <div class="col">
-            от 5000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col title">
-            Заключение эксперта (в судебном порядке)
-          </div>
-          <div class="col">
-            от 5000 руб.
-          </div>
-        </div>
-        <div class="row footer">
-          <div class="col">
-            <a href="#">узнать подробнее <img src="img/right.png"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="table-small">
-        <div class="row header">
-          <div class="col">
-            <span>02</span>
-          </div>
-          <div class="col title">
-            Выезд эксперта в праздничные и выходные дни
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Протокол исследований / испытаний
-          </div>
-          <div class="col">
-            от 1000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Заключение / отчет (в досудебном порядке)
-          </div>
-          <div class="col">
-            от 1000 руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Заключение эксперта (в судебном порядке)
-          </div>
-          <div class="col">
-            от 1000 руб.
-          </div>
-        </div>
-        <div class="row footer">
-          <div class="col">
-            <a href="#">узнать подробнее <img src="img/right.png"></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="table-small">
-        <div class="row header">
-          <div class="col">
-            <span>03</span>
-          </div>
-          <div class="col title">
-            Выезд эксперта в праздничные и выходные дни
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Протокол исследований / испытаний
-          </div>
-          <div class="col">
-            25% к стоимости работ руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Заключение / отчет (в досудебном порядке)
-          </div>
-          <div class="col">
-            25% к стоимости работ руб.
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            Заключение эксперта (в судебном порядке)
-          </div>
-          <div class="col">
-            25% к стоимости работ руб.
-          </div>
-        </div>
-        <div class="row footer">
-          <div class="col">
-            <a href="#">узнать подробнее <img src="img/right.png"></a>
-          </div>
-        </div>
-      </div>
+      <div id="table-small" class="table-small"></div>
     </div>
     <!-- end sub services -->
   </div>
@@ -1206,7 +1094,7 @@
   <script src="https://unpkg.com/imask"></script>
   <script src="js/gallery.js"></script> 
   <script src="js/swiper-bundle.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/script.js"></script>
   <script src="js/slidersConfig.js"></script>
   <script src="js/mask.js"></script>
 </body>

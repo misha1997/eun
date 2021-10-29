@@ -116,7 +116,8 @@ var portfolioSwiper = new Swiper(".portfolioSwiper", {
     },
   }
 });
-// porffolio slider
+
+// porffolio picture slider
 var swiper = new Swiper(".pictureSswiper", {
     slidesPerView: 1,
     spaceBetween: 14,
@@ -140,35 +141,4 @@ function currentSlide(n) {
       buttons[i].classList.remove('active');
     }
   }
-}
-
-// counter
-
-window.addEventListener('scroll', function onScroll() {
-  var rate = document.querySelector('.rate'),
-  rateTop = rate.getBoundingClientRect().top
-  if(rateTop <= 500) {
-    this.removeEventListener('scroll', onScroll);
-    number('number-1');
-    number('number-2');
-    number('number-3');
-    number('number-4');
-  }
-});
-
-function number(className) {
-  var number = document.querySelector('.'+className),
-  start = +number.innerHTML, end = +number.dataset.max;
-  var interval = setInterval(function() {
-    if(number.dataset.max > 1000) {
-      number.innerHTML = start += 10;
-    }
-    if(number.dataset.max < 1000) {
-      number.innerHTML = start += 5;
-    }
-    if(start >= end) {
-      clearInterval(interval);
-      number.innerHTML = number.dataset.max;
-    }
-  }, 5);
 }
