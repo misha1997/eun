@@ -43,7 +43,7 @@ var swiper = new Swiper(".rewievsSwiper", {
 // instruments
 var swiper = new Swiper(".instrumentsSwiper", {
   slidesPerView: 1,
-  spaceBetween: 35,
+  spaceBetween: 11,
   pagination: {
     el: ".swiper-pagination",
   },

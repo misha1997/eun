@@ -19,6 +19,9 @@ a {
   font-family: Poppins, sans-serif;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: underline;
+}
 .container {
   max-width: 1240px;
   margin: auto;
@@ -85,7 +88,7 @@ h6 {
   align-items: center;
   cursor: pointer;
 }
-a.show-all {
+a.transparent-button {
   display: inline-block;
   text-transform: uppercase;
   color: #486DF1;
@@ -94,6 +97,15 @@ a.show-all {
   border: 1px solid rgba(72, 109, 241, 0.85);
   border-radius: 4px;
   padding: 15px 44px;
+}
+a.transparent-button:hover {
+  background: linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
+  text-decoration: none;
+  color: #fff;
+}
+a.transparent-button:active {
+  background: linear-gradient(90deg, #4D75D2 0%, #2251CA 100%);
+  color: #fff;
 }
 .swiper-prev, .swiper-next {
   width: 30px;
@@ -142,6 +154,11 @@ body >.header {
 }
 .header ul.contacts li a {
   font-size: 15px;
+  display: inline-flex;
+  align-items: center;
+}
+.header ul.contacts li a:hover {
+  text-decoration: none;
 }
 .header ul.contacts li a.active {
   font-weight: bold;
@@ -438,6 +455,9 @@ button.order, a.details {
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 600;
+}
+button.order:hover, a.details:hover {
+  background: linear-gradient(90deg, #4D75D2 0%, #2251CA 100%);
 }
 button.order:active, a.details:active {
   background: linear-gradient(90deg, #4D75D2 0%, #2251CA 100%);
@@ -965,6 +985,9 @@ button.order:active, a.details:active {
   text-decoration: none;
   font-size: 12px;
 }
+.sub-services a.details:hover { 
+  text-decoration: none;
+}
 @media screen and (max-width: 1000px) {
   .sub-services {
     margin-bottom: 60px;
@@ -1044,6 +1067,7 @@ button.order:active, a.details:active {
 .order-services .checkbox-group label, #modal .checkbox-group label {
   margin-left: 10px;
   color: #fff;
+  cursor: pointer;
 }
 .order-services .checkbox-group a, #modal .checkbox-group a {
   color: #fff;
@@ -1124,7 +1148,7 @@ button.order:active, a.details:active {
 .how-work h1 {
   font-weight: bold;
   line-height: 66px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .how-work .steps {
   max-width: 410px;
@@ -1229,14 +1253,11 @@ button.order:active, a.details:active {
   margin-bottom: 36px;
 }
 .certificate .container a {
-  display: inline-block;
-  text-transform: uppercase;
   color: #fff;
-  font-weight: 600;
-  font-size: 14px;
   border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 4px;
-  padding: 15px 44px;
+}
+.certificate .container a:hover {
+  border: 0;
 }
 .certificate h1 {
   font-weight: bold;
@@ -1249,6 +1270,7 @@ button.order:active, a.details:active {
   width: 100%;
 }
 .certificate .swiper-slide .magnifier {
+  display: none;
   width: 65px;
   height: 47px;
   background: rgba(29, 29, 29, 0.8) url('../img/magnifier.png') no-repeat;
@@ -1292,6 +1314,9 @@ button.order:active, a.details:active {
   background-position: center center;
 }
 @media screen and (max-width: 1000px) {
+  .certificate .swiper-slide .magnifier {
+    display: block;
+  }
   .certificate {
     padding: 42px 20px;
     margin-bottom: 40px;
@@ -1633,16 +1658,6 @@ button.order:active, a.details:active {
 .instruments .swiper-wrapper {
   padding-bottom: 45px;
 }
-.instruments a.show-all {
-  display: inline-block;
-  text-transform: uppercase;
-  color: #486DF1;
-  font-weight: 600;
-  font-size: 14px;
-  border: 1px solid rgba(72, 109, 241, 0.85);
-  border-radius: 4px;
-  padding: 15px 44px;
-}
 @media screen and (max-width: 1000px) {
   .instruments {
     padding: 0 20px 60px 20px;
@@ -1739,6 +1754,9 @@ button.order:active, a.details:active {
     padding-bottom: 77px;
   }
   .rewievs .rewievs-item {
+    padding: 28px;
+  }
+  .rewievs .rewievs-item a {
     font-size: 12px;
   }
   .rewievs .rewievs-item .header .name {
@@ -1825,6 +1843,7 @@ button.order:active, a.details:active {
   width: 100%;
   height: 100%;
   background: url('../img/map.png') no-repeat;
+  background-size: cover;
 }
 .map .info-container-2 {
   background: none;
