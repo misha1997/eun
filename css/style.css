@@ -538,7 +538,7 @@ body >.header {
     padding: 0 13px;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     background: #fff;
     width: calc(100% - 20px);
   }
@@ -989,20 +989,33 @@ body >.header {
   margin-bottom: 1px;
 }
 .sub-services .table-small .title span {
-  background: url('../img/icon/arrow.svg') no-repeat, linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
-  background-position: center center;
+  background: linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
   width: 27px;
   height: 27px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-services .table-small .title span:before {
+  content: url('../img/icon/arrow.svg');
+  transform: rotate(180deg);
+}
+.sub-services .table-small .title span.active {
+  transform: rotate(-180deg);
 }
 .sub-services .table-small .services {
   margin-bottom: 0;
-  height: 0;
+  max-height: 0;
   overflow: hidden;
   text-align: left;
+  will-change: transform;
+  -moz-transition: opacity .5s, max-height .5s;
+  -ms-transition: opacity .5s, max-height .5s;
+  transition: opacity .5s, max-height .5s;
 }
 .sub-services .table-small .services.active {
-  height: auto;
+  max-height: 100%;
 }
 .sub-services .table-small .services .service-item {
   padding: 10px 16px;

@@ -102,6 +102,9 @@ var newTable = document.createElement('div');
 for (let i = 0; i < result.length; i++) {
   var title = document.createElement('div');
   var span = document.createElement('span');
+  if(i == 0) {
+    span.classList.add('active');
+  }
   title.classList.add('title');
   title.innerHTML = result[i].title;
   title.appendChild(span);
@@ -127,6 +130,7 @@ var acc = tabelSmall.getElementsByClassName("title");
 var i;
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
+    this.querySelector('span').classList.toggle("active");
     this.nextSibling.classList.toggle("active");
   });
 }

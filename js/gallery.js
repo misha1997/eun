@@ -11,10 +11,16 @@ const svgIcons = {
 }
 
 let mklbItems = document.getElementsByClassName('mklbItem');
+let magnifiers = document.getElementsByClassName('magnifier');
 let lightboxContainer;
 let auto = 0;
 let interval;
 
+for (let i=0; i< magnifiers.length; i++) {
+  let magnifier = magnifiers[i];
+  let mklbItem = magnifiers[i].parentElement.querySelector('.mklbItem');
+  magnifier.addEventListener('click', () => _mklbOpen(mklbItem));
+}
 
 for (let i=0; i< mklbItems.length; i++) {
     let mklbItem = mklbItems[i];
