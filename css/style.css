@@ -76,7 +76,7 @@ h6 {
 }
 .gold-color {
   background: #FBDCA5;
-  background: -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
+  background: #EABC6E, -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
   background: #EABC6E, -o-linear-gradient(left, #FBDCA5 0%, #EABC6E 100%);
   background: #EABC6E, linear-gradient(to right, #FBDCA5 0%, #EABC6E 100%);
   -webkit-background-clip: text;
