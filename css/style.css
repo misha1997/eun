@@ -75,12 +75,12 @@ h6 {
   font-size: 22px;
 }
 .gold-color {
-  color: #FBDCA5;
   background: -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
   background: -o-linear-gradient(left, #FBDCA5 0%, #EABC6E 100%);
   background: linear-gradient(to right, #FBDCA5 0%, #EABC6E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #FBDCA5;
 }
 .swiper-slide {
   display: -webkit-box;
@@ -529,12 +529,12 @@ body >.header {
   background: url('../img/icon/list-item-gold.svg') no-repeat left top 22px;
 }
 .main ul.menu > li:hover > a, .main ul.menu > li > ul.dropdown > li:hover > a {
-  color: #FBDCA5;
   background: -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
   background: -o-linear-gradient(left, #FBDCA5 0%, #EABC6E 100%);
   background: linear-gradient(to right, #FBDCA5 0%, #EABC6E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: #FBDCA5;
 }
 .main ul.menu li ul.dropdown li a {
   border: 0;
