@@ -76,9 +76,9 @@ h6 {
 }
 .gold-color {
   background: #FBDCA5;
-  background-image: -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
-  background-image: -o-linear-gradient(left, #FBDCA5 0%, #EABC6E 100%);
-  background-image: linear-gradient(to right, #FBDCA5 0%, #EABC6E 100%);
+  background: #EABC6E, -webkit-gradient(linear, left top, right top, from(#FBDCA5), to(#EABC6E));
+  background: #EABC6E, -o-linear-gradient(left, #FBDCA5 0%, #EABC6E 100%);
+  background: #EABC6E, linear-gradient(to right, #FBDCA5 0%, #EABC6E 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -255,20 +255,6 @@ body >.header {
 }
 .header ul.contacts li img {
   margin-right: 19px;
-}
-@media screen and (max-width: 1000px) {
-  .header ul.contacts {
-    margin-left: -51px;
-    margin-top: 3px;
-  }
-  .header ul.contacts li img {
-    margin-right: 6px;
-  }
-}
-@media screen and (max-width: 350px) {
-  .header ul.contacts {
-    margin-left: -25px;
-  }
 }
 /* burger menu */
 .burger-menu {
@@ -633,7 +619,7 @@ body >.header {
   .header > ul.contacts > li > img {
     margin-right: 7px;
   }
-  .header > ul.contacts > li.email {
+  .header > ul.contacts {
     display: none;
   }
   .main ul.menu {
