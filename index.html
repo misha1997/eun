@@ -49,12 +49,14 @@
         <li><a href="#">Контакты</a></li>
         <li><a href="#">Задать вопрос</a></li>
       </ul>
-      <ul class="contacts">
-        <li class="email"><img src="img/icon/mail-blue.svg"><a href="#">info@eunpro.ru</a></li>
-        <li><img src="img/icon/phone-small.svg"><a href="#" class="active">+7 (495) 419-25-30</a></li>
-      </ul>
-      <div class="button-order">
-        <button class="order" onclick="showHideModal()">заказать звонок</button>
+      <div class="foot">
+        <ul class="contacts">
+          <li class="email"><img src="img/icon/mail-blue.svg"><a href="#">info@eunpro.ru</a></li>
+          <li><img src="img/icon/phone-small.svg"><a href="#" class="active">+7 (495) 419-25-30</a></li>
+        </ul>
+        <div class="button-order">
+          <button class="order" onclick="showHideModal()">заказать звонок</button>
+        </div>
       </div>
     </div>
   </div>
@@ -74,8 +76,10 @@
         <button class="order">Заказать</button>
       </div>
       <div class="checkbox-group">
-        <input type="checkbox" id="check-modal">
-        <label for="check-modal">Отправляя заявку вы соглашаетесь с <a href="#">обработкой персональных данных</a></label>
+        <input type="checkbox" id="check-modal" class="custom-checkbox">
+        <label for="check-modal">
+          <span>Отправляя заявку вы соглашаетесь с <a href="#">обработкой персональных данных</a></span>
+        </label>
       </div>
     </div>
   </div>
@@ -139,9 +143,9 @@
     <div class="container">
       <div class="content">
         <h1>
-          Проведение <br><span class="gold-color"> независимой <br>экспертизы</span> и оценки
+          Проведение <br class="one"><span class="gold-color"> независимой <br class="two">экспертизы</span> и оценки
         </h1>
-        <h2>Судебные и внесудебные экспертизы, а также исследования по различным вопросам</h2>
+        <h2>Судебные и внесудебные экспертизы, <br class="tree">а также исследования по различным вопросам</h2>
         <button class="order" onclick="showHideModal()">Заказать экспертизу</button>
       </div>
     </div>
@@ -392,8 +396,10 @@
       <button class="order">Заказать</button>
     </div>
     <div class="checkbox-group">
-      <input type="checkbox" id="check">
-      <label for="check">Отправляя заявку вы соглашаетесь с <a href="#">обработкой персональных данных</a></label>
+      <input type="checkbox" id="check" class="custom-checkbox">
+      <label for="check">
+        <span>Отправляя заявку вы соглашаетесь с <a href="#">обработкой персональных данных</a></span>
+      </label>
     </div>
   </div>
   <!-- end order form -->
@@ -981,54 +987,60 @@
     <!-- experts -->
     <div class="container experts">
       <h1>Наши <span>эксперты</span></h1>
-      <div class="swiper expertsSwiper experts-items">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="expert-item">
-              <img src="img/expert.png" alt="">
-              <div class="name">
-                Артем Силин
+      <div class="swiper-container">
+        <div class="swiper expertsSwiper experts-items">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="expert-item">
+                <img src="img/expert.png" alt="">
+                <div class="name">
+                  Артем Силин
+                </div>
+                <div class="description">
+                  Специалист по экологическим экспертизам
+                </div>
               </div>
-              <div class="description">
-                Специалист по экологическим экспертизам
+            </div>
+            <div class="swiper-slide">
+              <div class="expert-item">
+                <img src="img/expert.png" alt="">
+                <div class="name">
+                  Артем Силин
+                </div>
+                <div class="description">
+                  Специалист по экологическим экспертизам
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="expert-item">
+                <img src="img/expert.png" alt="">
+                <div class="name">
+                  Артем Силин
+                </div>
+                <div class="description">
+                  Специалист по экологическим экспертизам
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="expert-item">
+                <img src="img/expert.png" alt="">
+                <div class="name">
+                  Артем Силин
+                </div>
+                <div class="description">
+                  Специалист по экологическим экспертизам
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="expert-item">
-              <img src="img/expert.png" alt="">
-              <div class="name">
-                Артем Силин
-              </div>
-              <div class="description">
-                Специалист по экологическим экспертизам
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="expert-item">
-              <img src="img/expert.png" alt="">
-              <div class="name">
-                Артем Силин
-              </div>
-              <div class="description">
-                Специалист по экологическим экспертизам
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="expert-item">
-              <img src="img/expert.png" alt="">
-              <div class="name">
-                Артем Силин
-              </div>
-              <div class="description">
-                Специалист по экологическим экспертизам
-              </div>
-            </div>
-          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="navigation">
+          <div class="swiper-prev"></div>
+          <div class="swiper-next"></div>
+        </div>
       </div>
       <a href="#" class="transparent-button">смотреть всеx</a>
     </div>
