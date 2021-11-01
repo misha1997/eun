@@ -36,9 +36,15 @@ function showHideModal() {
   if(modal) {
     document.getElementById('modal').style.display = "flex";
     document.getElementsByTagName('body')[0].style.overflow = "hidden";
+    setTimeout(function() {
+      document.getElementById('modal').style.opacity = '1';
+    }, 0);
   } else {
-    document.getElementById('modal').style.display = "none";
+    document.getElementById('modal').style.opacity = '0';
     document.getElementsByTagName('body')[0].style.overflow = "auto";
+    setTimeout(function() {
+      document.getElementById('modal').style.display = "none";
+    }, 500);
   }
 }
 
