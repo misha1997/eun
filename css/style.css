@@ -431,6 +431,9 @@ body >.header {
   background: -o-radial-gradient(circle farthest-side at 70% 80%, #1E2841 0%, #0B1222 60%);
   background: -webkit-radial-gradient(circle farthest-side at 70% 80%, #1E2841 0%, #0B1222 60%);
 }
+.main a:hover {
+  text-decoration: none;
+}
 /* banner menu navigation */
 .main ul.menu {
   background: #24365F;
@@ -570,6 +573,9 @@ body >.header {
   display: none;
 }
 @media screen and (max-width: 1300px) {
+  .main {
+    padding: 0 20px;
+  }
   .main .bg {
     background-size: 50%;
   }
@@ -885,6 +891,8 @@ body >.header {
 }
 .services .rows .service-item img {
   width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .service-item .content {
   position: absolute;
@@ -1436,9 +1444,6 @@ body >.header {
   }
 }
 @media screen and (max-width: 1200px) {
-  .how-work .container {
-    padding: 0;
-  }
   .how-work img.pic1 {
     width: 400px;
     height: auto;
@@ -1452,7 +1457,7 @@ body >.header {
 }
 @media screen and (max-width: 1000px) {
   .how-work {
-    padding: 42px 20px;
+    padding: 42px 0px;
   }
   .how-work .steps .step-item .title {
     font-size: 16px;
@@ -1561,6 +1566,11 @@ body >.header {
 .certificate .navigation > .swiper-next {
   background: url('../img/right-icon-white.png') no-repeat;
   background-position: center center;
+}
+@media screen and (max-width: 1300px) {
+  .certificate .container {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .certificate .swiper-slide .magnifier {
@@ -2352,6 +2362,11 @@ body >.header {
   line-height: 53px;
   margin-bottom: 23px;
   margin-top: 59px;
+}
+@media screen and (max-width: 1300px) {
+  .information {
+    padding: 0 20px;
+  }
 }
 @media screen and (max-width: 1000px) {
   .information {
