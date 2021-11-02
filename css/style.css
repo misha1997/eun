@@ -358,21 +358,21 @@ body >.header {
 .menubox a:hover {
   text-decoration: none;
 }
-.menubox > ul.menu > li {
+.menubox > div > ul.menu > li {
   width: 100%;
   margin-bottom: 6px;
   background: rgba(36, 54, 95, 0.06);
 }
-.menubox > ul.menu > li.active {
+.menubox > div > ul.menu > li.active {
   background: #24365F;
 }
-.menubox > ul.menu > li.active > a {
+.menubox > div > ul.menu > li.active > a {
   color: #fff;
 }
-.menubox > ul.menu > li.active ul {
+.menubox > div > ul.menu > li.active ul {
   display: block;
 }
-.menubox > ul.menu > li > a {
+.menubox > div > ul.menu > li > a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,11 +397,11 @@ body >.header {
   padding: 20px 12px 10px 12px;
   background: #fff;
 }
-.menubox > ul.menu > li > ul > li {
+.menubox > div > ul.menu > li > ul > li {
   background: none;
   margin: 10px 0;
 }
-.menubox > ul.menu > li > ul > li > a {
+.menubox > div > ul.menu > li > ul > li > a {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
@@ -415,13 +415,13 @@ body >.header {
   background: url('../img/icon/list-blue.svg') no-repeat;
   background-position: left center;
 }
-.menubox > ul.menu > li > ul > li > a:hover {
+.menubox > div > ul.menu > li > ul > li > a:hover {
   color: #24365F;
   font-weight: bold;
   font-size: 14px;
 }
-.menubox > hr {
-  margin: 38 0;
+.menubox > div > hr {
+  margin: 38px 0;
 }
 .menubox ul.navigation {
   margin: 0;
@@ -618,14 +618,30 @@ body >.header {
   }
 }
 @media screen and (max-width: 1300px) {
-  .main {
+  .main .bg {
     padding: 0 20px;
   }
   .main .bg {
-    background-size: 50%;
+    background-position: right 0px bottom;
+    background-size: 55%;
+  }
+}
+@media screen and (max-width: 1210px) {
+  .main .bg {
+    background-position: right -80px bottom;
+    background-size: 60%;
+  }
+}
+@media screen and (max-width: 1110px) {
+  .main .bg {
+    background-position: right -150px bottom;
+    background-size: 65%;
   }
 }
 @media screen and (max-width: 1000px) {
+  .main {
+    padding: 0 20px;
+  }
   .main h2 br.tree {
     display: block;
   }
@@ -636,6 +652,7 @@ body >.header {
     display: block;
   }
   .main .bg {
+    padding: 0;
     background-size: 120%;
     background-position: right -40px bottom;
     height: 640px;
@@ -793,8 +810,8 @@ body >.header {
 }
 .block-skills .number {
   background-color: #24365F;
-  width: 100px;
-  height: 100px;
+  width: 85px;
+  height: 85px;
   border-radius: 100%;
   border: 8px solid #EDEEF0;
   text-align: center;
@@ -803,7 +820,7 @@ body >.header {
 .block-skills .number > span {
   font-family: Merriweather, sans-serif;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 26px;
   height: 100%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -885,10 +902,14 @@ body >.header {
   padding-left: 42px;
   border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
+@media screen and (max-width: 1240px) {
+  .citate {
+    margin: 80px 10px 47px 10px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .citate {
     position: relative;
-    margin-bottom: 47px;
     padding: 36px 30px;
     font-size: 14px;
     line-height: 24px;
@@ -971,6 +992,7 @@ body >.header {
           align-items: flex-end;
 }
 .service-item .content .title {
+  padding: 0 20px;
   margin-bottom: 37px;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -1032,8 +1054,8 @@ body >.header {
     border-radius: 0;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50% 50%;
-    grid-template-columns: 50% 50%;
+    -ms-grid-columns: 40% 60%;
+    grid-template-columns: 40% 60%;
     height: auto;
     max-height: 360px;
   }
@@ -1061,6 +1083,7 @@ body >.header {
     margin-bottom: 7px;
     padding-right: 15px;
     line-height: 18px;
+    padding: 0 20px 0 0;
   }
   .services .rows .service-item .content .price {
     display: block;
@@ -1083,6 +1106,12 @@ body >.header {
   }
   .service-item > .content:hover > .order {
     margin-top: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .services .rows .service-item {
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
   }
 }
 /* end service */
@@ -1319,11 +1348,11 @@ body >.header {
   border: 0;
   margin-right: 22px;
 }
-.order-services > .form-group > input.name, #modal > .form-group > input.name {
+.order-services > .form-group > input.name {
   background: #FFFFFF url('../img/icon/form-icon-name.svg') no-repeat;
   background-position: center left 21px;
 }
-.order-services .form-group .phone, #modal .form-group .phone {
+.order-services .form-group .phone {
   background: #FFFFFF url('../img/icon/form-icon-phone.svg') no-repeat;
   background-position: center left 21px;
 }
@@ -1619,7 +1648,7 @@ body >.header {
   opacity: 0.5;
 }
 .certificate .swiper-slide:hover {
-  background: #000 url('../img/magnifier.png') no-repeat;
+  background: url('../img/magnifier.png') no-repeat;
   background-position: center center;
 }
 .certificate .swiper-pagination-bullet {
@@ -1653,6 +1682,9 @@ body >.header {
   }
 }
 @media screen and (max-width: 1000px) {
+  .certificate .swiper-slide:hover {
+    background: #000;
+  }
   .certificate .swiper-slide .magnifier {
     display: block;
   }
@@ -1752,13 +1784,17 @@ body >.header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-.portfolio .portfolioSwiper .swiper-slide:hover, .portfolio .portfolioSwiper .swiper-slide.active {
+.portfolio .portfolioSwiper .swiper-slide.active {
   background: -webkit-gradient(linear, left top, right top, from(#7199F7), to(#3F72F6));
   background: -o-linear-gradient(left, #7199F7 0%, #3F72F6 100%);
   background: linear-gradient(90deg, #7199F7 0%, #3F72F6 100%);
   color: #fff;
   font-weight: bold;
   text-align: center;
+}
+.portfolio .portfolio-item {
+  transition: 0.5s;
+  opacity: 0;
 }
 .portfolio .portfolio-item .text {
   padding-right: 68px;
@@ -2063,6 +2099,11 @@ body >.header {
 .instruments .swiper-container {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1240px) {
+  .instruments .instruments-item {
+    margin: 20px 10px 0 10px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .instruments .swiper-wrapper {
     padding-bottom: 60px;
@@ -2189,6 +2230,12 @@ body >.header {
 .rewievs .swiper-container {
   margin-bottom: 30px;
 }
+@media screen and (max-width: 1240px) {
+  .rewievs .rewievs-item {
+    padding: 28px;
+    margin: 0 10px;
+  }
+}
 @media screen and (max-width: 1000px) {
   .rewievs .swiper-container {
     margin-bottom: 0;
@@ -2209,9 +2256,6 @@ body >.header {
   }
   .rewievs-bg h1, .rewievs {
     padding-bottom: 77px;
-  }
-  .rewievs .rewievs-item {
-    padding: 28px;
   }
   .rewievs .rewievs-item a {
     font-size: 12px;
@@ -2316,15 +2360,18 @@ body >.header {
 .experts .navigation > .swiper-prev, .experts .navigation > .swiper-next {
   display: none;
 }
-.experts .swiper-container {
-  margin-bottom: 30px;
-}
 @media screen and (max-width: 1200px) {
   .experts .navigation > .swiper-prev, .experts .navigation > .swiper-next {
     display: block;
   }
+  .experts .swiper-container {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 1000px) {
+  .experts .swiper-container {
+    margin-bottom: 0px;
+  }
   .experts .swiper-pagination {
     display: block;
   }
@@ -2416,8 +2463,20 @@ body >.header {
 .map .contacts .contact ul li.mail {
   background: url('../img/icon/mail.svg') no-repeat left top 3px;
 }
-.map .contacts .contact ul li.number {
+.map .contacts .contact ul li.mail a { 
+  color: #fff;
+}
+.map .contacts .contact ul li.mail a:hover {
+  text-decoration: none;
+}
+.map .contacts .contact ul li.number2 {
   background: url('../img/icon/phone.svg') no-repeat left top 3px;
+}
+.map .contacts .contact ul li.number2 a { 
+  color: #fff;
+}
+.map .contacts .contact ul li.number2 a:hover {
+  text-decoration: none;
 }
 .map .contacts .contact ul li.time {
   background: url('../img/icon/time.svg') no-repeat left top 3px;
@@ -2625,11 +2684,7 @@ body > .footer a {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#modal .content input.name, #modal .content input.phone {
-  background: #F5F5FA;
-  color: #333333;
-}
-#modal label span, #modal label a {
+#modal .content input.name, #modal .content input.phone, #modal label span, #modal label a {
   color: #333333;
 }
 #modal button.close {
@@ -2641,6 +2696,14 @@ body > .footer a {
   right: 32px;
   top: 32px;
   cursor: pointer;
+}
+#modal input.name {
+  background: #F5F5FA url('../img/icon/form-icon-name.svg') no-repeat;
+  background-position: center left 21px;
+}
+#modal input.phone {
+  background: #F5F5FA url('../img/icon/form-icon-phone.svg') no-repeat;
+  background-position: center left 21px;
 }
 @media screen and (max-width: 1000px) {
   #modal label span, #modal label a {

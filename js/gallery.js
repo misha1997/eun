@@ -28,6 +28,7 @@ for (let i=0; i< mklbItems.length; i++) {
 }
 
 function _mklbOpen(mklbItem) {
+    document.getElementsByTagName('body')[0].style.overflow = "hidden";
     lightboxContainer = document.createElement('div');
     lightboxContainer.id = "mkLightboxContainer";
 
@@ -141,7 +142,8 @@ function _mklbAddGallery(currentItem) {
 }
 
 function _closeLightbox() {
-    document.getElementById('mkLightboxContainer').remove();
+  document.getElementsByTagName('body')[0].style.overflow = "auto";
+  document.getElementById('mkLightboxContainer').remove();
 	clearInterval(interval);
 }
 

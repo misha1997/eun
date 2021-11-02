@@ -2,19 +2,27 @@
 var swiper = new Swiper(".expertsSwiper", {
   slidesPerView: 1,
   spaceBetween: 11,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
+  navigation: {
+    nextEl: document.querySelector(".experts").querySelector(".swiper-next"),
+    prevEl: document.querySelector(".experts").querySelector(".swiper-prev"),
+  },
   breakpoints: {
     600: {
+      loop: true,
       slidesPerView: 2,
       spaceBetween: 20,
     },
     800: {
+      loop: true,
       slidesPerView: 3,
       spaceBetween: 10,
     },
     1200: {
+      loop: false,
       slidesPerView: 4,
       spaceBetween: 10,
     },
@@ -24,7 +32,8 @@ var swiper = new Swiper(".expertsSwiper", {
 // rewievs
 var swiper = new Swiper(".rewievsSwiper", {
   slidesPerView: 1,
-  spaceBetween: 15,
+  spaceBetween: 10,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -33,13 +42,21 @@ var swiper = new Swiper(".rewievsSwiper", {
     prevEl: document.querySelector(".rewievs").querySelector(".swiper-prev"),
   },
   breakpoints: {
+    900: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    800: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
     700: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
-    1000: {
+    1200: {
       slidesPerView: 3,
-      spaceBetween: 25,
+      spaceBetween: 20,
     },
   }
 });
@@ -47,7 +64,8 @@ var swiper = new Swiper(".rewievsSwiper", {
 // instruments
 var swiper = new Swiper(".instrumentsSwiper", {
   slidesPerView: 1,
-  spaceBetween: 11,
+  spaceBetween: 10,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -58,19 +76,19 @@ var swiper = new Swiper(".instrumentsSwiper", {
   breakpoints: {
     700: {
       slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 10,
     },
     800: {
       slidesPerView: 2,
-      spaceBetween: 24,
+      spaceBetween: 10,
     },
     1000: {
       slidesPerView: 3,
-      spaceBetween: 24,
+      spaceBetween: 10,
     },
     1200: {
       slidesPerView: 4,
-      spaceBetween: 24,
+      spaceBetween: 20,
     },
   }
 });
@@ -79,6 +97,7 @@ var swiper = new Swiper(".instrumentsSwiper", {
 var swiper = new Swiper(".certififcateSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
+  loop: true,
   pagination: {
     el: ".swiper-pagination",
   },
@@ -142,10 +161,18 @@ function currentSlide(n) {
   var buttons = document.getElementsByClassName(" portfolio-button");
   for (let i = 0; i < slides.length; i++) {
     if(i == n) {
-      slides[i].style.display = "block";
+      setTimeout(function() {
+        slides[i].style.display = "block";
+        setTimeout(function() {
+          slides[i].style.opacity = "1";
+        }, 500);
+      }, 500);
       buttons[i].classList.add('active');
     } else {
-      slides[i].style.display = "none";
+      slides[i].style.opacity = "0";
+      setTimeout(function() {
+        slides[i].style.display = "none";
+      }, 500);
       buttons[i].classList.remove('active');
     }
   }
