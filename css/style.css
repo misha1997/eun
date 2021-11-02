@@ -242,7 +242,7 @@ body >.header {
   font-weight: 500;
   mix-blend-mode: normal;
 }
-.header .logo {
+.header img.logo {
   width: 79px;
 }
 .header ul.navigation {
@@ -2234,6 +2234,9 @@ body >.header {
   .rewievs .rewievs-item {
     padding: 28px;
     margin: 0 10px;
+  }
+  .rewievs-bg .title {
+    height: 250px;
   }
 }
 @media screen and (max-width: 1000px) {
