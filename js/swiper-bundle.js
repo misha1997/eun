@@ -1585,9 +1585,9 @@
       const $el = swiper.$el;
 
       if (typeof swiper.params.width !== 'undefined' && swiper.params.width !== null) {
-        width = swiper.params.width - 50;
+        width = swiper.params.width;
       } else {
-        width = $el[0].clientWidth - 50;
+        width = $el[0].clientWidth;
       }
 
       if (typeof swiper.params.height !== 'undefined' && swiper.params.height !== null) {

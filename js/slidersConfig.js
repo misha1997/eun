@@ -108,7 +108,7 @@ var swiper = new Swiper(".certififcateSwiper", {
   breakpoints: {
     600: {
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
       pagination: {
         el: ".swiper-pagination",
       },
