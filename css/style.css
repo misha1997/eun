@@ -2166,7 +2166,7 @@ body >.header {
 }
 @media screen and (max-width: 1240px) {
   .instruments .instruments-item {
-    margin: 20px 10px 0 10px;
+    margin: 20px 0px 0 0px;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -2342,7 +2342,7 @@ body >.header {
 @media screen and (max-width: 1240px) {
   .rewievs .rewievs-item {
     padding: 28px;
-    margin: 0 10px;
+    margin: 0px;
   }
   .rewievs-bg .title {
     height: 200px;
