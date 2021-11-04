@@ -2362,6 +2362,11 @@ body >.header {
     padding-bottom: 0px;
   }
 }
+@media screen and (max-width: 600px) {
+  .rewievs-bg .title {
+    height: 210px;
+  }
+}
 /* end rewievs */
 /* experts */
 .experts {
