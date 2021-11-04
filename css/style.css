@@ -852,16 +852,20 @@ body >.header {
   }
 }
 @media screen and (max-width: 1000px) {
+  .block-skills .skills .skill-item {
+    margin-bottom: 15px;
+  }
   .block-skills {
     display: block;
-    padding: 100px 20px 0 20px;
+    padding: 50px 20px 0 20px;
   }
   .block-skills .skills {
-    margin-top: 44px;
+    margin-top: 20px;
   }
   .block-skills h6 {
     font-size: 16px;
     line-height: 26px;
+    margin-top: 20px;
   }
   .block-skills .number {
     width: 60px;
@@ -918,6 +922,7 @@ body >.header {
     padding: 36px 30px;
     font-size: 14px;
     line-height: 24px;
+    margin: 60px 10px 20px 10px;
   }
   .citate img {
     position: absolute;
@@ -1038,6 +1043,9 @@ body >.header {
   margin: 0 0 11px 0;
 }
 @media screen and (max-width: 1000px) {
+  .services {
+    margin-bottom: 30px;
+  }
   .services .rows {
     display: -ms-grid;
     display: grid;
@@ -1288,7 +1296,7 @@ body >.header {
 }
 @media screen and (max-width: 1000px) {
   .sub-services {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
   .sub-services h1 {
     line-height: 40px;
@@ -1546,7 +1554,7 @@ body >.header {
 }
 @media screen and (max-width: 1000px) {
   .how-work {
-    padding: 42px 0px;
+    padding: 30px 0px;
   }
   .how-work .steps .step-item .title {
     font-size: 16px;
@@ -1555,6 +1563,10 @@ body >.header {
   .how-work .steps .step-item .description {
     font-size: 14px;
     line-height: 175%;
+    padding-bottom: 15px;
+  }
+  .how-work h1 {
+    margin-bottom: 15px;
   }
 }
 @media screen and (max-width: 920px) {
@@ -1714,6 +1726,10 @@ body >.header {
   }
 }
 @media screen and (max-width: 1000px) {
+  .certificate .container {
+    padding: 0px;
+    margin-bottom: 0;
+  }
   .certificate .swiper-slide:hover {
     background: #000;
   }
@@ -1721,11 +1737,13 @@ body >.header {
     display: block;
   }
   .certificate {
-    padding: 42px 20px;
-    margin-bottom: 40px;
+    padding: 25px 20px;
   }
   .certificate .swiper-wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 40px;
+  }
+  .certificate .swiper {
+    padding-bottom: 0;
   }
   .certificate .container {
     display: block;
@@ -1733,6 +1751,7 @@ body >.header {
   }
   .certificate h1 {
     text-align: center;
+    margin-bottom: 20px;
   }
   .certificate .container a {
     display: none;
@@ -1926,7 +1945,7 @@ body >.header {
     margin-bottom: 20px;
   }
   .portfolio {
-    padding: 44px 20px;
+    padding: 30px 20px;
     overflow: hidden;
   }
   .portfolio .portfolio-item .pictures {
@@ -2028,8 +2047,8 @@ body >.header {
     -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%;
     justify-items: center;
-    padding: 50px 0;
-    margin-bottom: 60px;
+    padding: 30px 0;
+    margin-bottom: 30px;
   }
   .rate .rate-item {
     width: 100%;
@@ -2152,13 +2171,14 @@ body >.header {
 }
 @media screen and (max-width: 1000px) {
   .instruments .swiper-wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
   }
   .instruments .swiper-container {
     margin-bottom: 0;
   }
   .instruments {
-    padding: 0 20px 60px 20px;
+    padding: 0 20px 30px 20px;
   }
   .instruments .instrumentsSwiper {
     width: 100%;
@@ -2166,9 +2186,11 @@ body >.header {
   }
   .instruments h1 {
     line-height: 40px;
+    margin-bottom: 0;
   }
   .instruments .swiper  {
     padding-bottom: 0px;
+    margin: 0 20px 0 0;
   }
 }
 /* end instruments */
@@ -2331,10 +2353,11 @@ body >.header {
     margin-bottom: 0;
   }
   .rewievs .swiper-wrapper {
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
   }
   .rewievs {
-    padding: 0 20px 60px 20px;
+    padding: 0 20px 30px 20px;
   }
   .rewievs-bg .title {
     padding-top: 56px;
@@ -2342,9 +2365,6 @@ body >.header {
   }
   .rewievs .rewievsSwiper {
     width: 100%;
-  }
-  .rewievs-bg h1, .rewievs {
-    padding-bottom: 77px;
   }
   .rewievs .rewievs-item a {
     font-size: 12px;
@@ -2360,6 +2380,7 @@ body >.header {
   }
   .rewievs .swiper  {
     padding-bottom: 0px;
+    margin: 0;
   }
 }
 @media screen and (max-width: 600px) {
@@ -2440,6 +2461,9 @@ body >.header {
   }
 }
 @media screen and (max-width: 1000px) {
+  .experts h1 {
+    margin-bottom: 20px;
+  }
   .experts .swiper-container {
     margin-bottom: 0px;
   }
@@ -2447,10 +2471,10 @@ body >.header {
     display: block;
   }
   .experts .swiper-wrapper {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
   }
   .experts {
-    padding: 0 20px 59px 20px;
+    padding: 0 20px 40px 20px;
   }
   .expertsSwiper {
     width: 100%;
@@ -2629,6 +2653,8 @@ body >.header {
   .information .title {
     font-size: 18px;
     line-height: 26px;
+    margin-bottom: 15px;
+    margin-top: 30px;
   }
   .information {
     font-size: 14px;
@@ -2677,11 +2703,19 @@ body > .footer a {
   font-size: 10px;
 }
 @media screen and (max-width: 1000px) {
+  body > .footer {
+    margin-top: 50px;
+    padding: 40px 0;
+  }
+  .footer img.logo-footer {
+    width: 100px;
+  }
   .footer .copyright {
     display: block;
   }
   .footer .description {
     display: block;
+    padding: 15px 40px;
   }
   .footer .container {
     -webkit-box-orient: vertical;
@@ -2700,7 +2734,7 @@ body > .footer a {
     width: 100%;
   }
   .footer .container ul.navigation {
-    padding: 34px 0;
+    padding: 20px 0;
     background: url('../img/bottom.png') no-repeat;
     background-size: 100%;
     background-size: 100% 2px;
@@ -2714,7 +2748,7 @@ body > .footer a {
     display: none;
   }
   .footer .container ul.link-2 {
-    padding: 34px 0;
+    padding: 20px 0;
   }
 }
 /* end footer */

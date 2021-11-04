@@ -95,8 +95,8 @@ var swiper = new Swiper(".instrumentsSwiper", {
 
 // certiifcate
 var swiper = new Swiper(".certififcateSwiper", {
-  slidesPerView: 1,
-  spaceBetween: 30,
+  slidesPerView: 2,
+  spaceBetween: 20,
   loop: true,
   pagination: {
     el: ".swiper-pagination",
