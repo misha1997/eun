@@ -180,7 +180,7 @@ function _mklbPlayAutoGallery() {
 
 function _mklbStopAutoGallery() {
 	clearInterval(interval);
-	document.getElementById('controlContainer').classList.add("stop");
+	// document.getElementById('controlContainer').classList.add("stop");
 }
 
 function _mklbSlide(slideToPrev) {

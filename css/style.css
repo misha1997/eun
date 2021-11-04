@@ -2058,8 +2058,8 @@ body >.header {
 .instruments .instruments-item {
   display: block;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 30px;
   font-weight: 500;
@@ -2093,7 +2093,7 @@ body >.header {
           text-decoration-line: underline;
 }
 .instruments .instrumentsSwiper {
-  margin: 6px 6px 20px 6px;
+  margin: 9px 9px 20px 9px;
 }
 .instruments .swiper-wrapper {
   padding-bottom: 20px;
@@ -2197,7 +2197,7 @@ body >.header {
   position: relative;
 }
 .rewievs .rewievsSwiper {
-  margin: 6px 6px 20px 6px;
+  margin: 9px 9px 20px 9px;
 }
 .rewievs .swiper-wrapper {
   padding-bottom: 20px;
@@ -2205,8 +2205,8 @@ body >.header {
 .rewievs .rewievs-item {
   padding: 37px 45px;
   background: #FFFFFF;
-  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   color: #404040;
   font-size: 14px;
