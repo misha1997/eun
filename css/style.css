@@ -2636,6 +2636,7 @@ body >.header {
     margin-bottom: 0;
   }
   .map .contacts .contact {
+    z-index: 0;
     position: relative;
     width: auto;
     left: 0;
