@@ -11,20 +11,22 @@ var swiper = new Swiper(".expertsSwiper", {
     prevEl: document.querySelector(".experts").querySelector(".swiper-prev"),
   },
   breakpoints: {
-    600: {
-      loop: true,
+    900: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     800: {
-      loop: true,
-      slidesPerView: 3,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    700: {
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1200: {
       loop: false,
-      slidesPerView: 4,
-      spaceBetween: 10,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
   }
 });

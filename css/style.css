@@ -984,10 +984,11 @@ body >.header {
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(56,63,87);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(56,63,87,1)), to(rgba(255,112,112,0)));
-  background: -o-linear-gradient(bottom, rgba(56,63,87,1) 0%, rgba(255,112,112,0) 100%);
-  background: linear-gradient(0deg, rgba(56,63,87,1) 0%, rgba(255,112,112,0) 100%);
+  
+  background: #383f57;
+  background: -webkit-gradient(linear, left bottom, left top, from(#383f57), to(rgba(255,112,112,0)));
+  background: -o-linear-gradient(bottom, #383f57 0%, rgba(255,112,112,0) 100%);
+  background: linear-gradient(0deg, #383f57 0%, rgba(255,112,112,0) 100%);
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -1639,7 +1640,7 @@ body >.header {
           align-items: center;
   margin-bottom: 36px;
 }
-.certificate .container a {
+.certificate > .container > a {
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.85);
 }
@@ -1656,6 +1657,7 @@ body >.header {
 .certificate .swiper-slide img {
   width: 100%;
   height: auto;
+  transition: 0.5s;
 }
 .certificate .swiper-slide .magnifier {
   display: none;
@@ -1753,7 +1755,7 @@ body >.header {
     text-align: center;
     margin-bottom: 20px;
   }
-  .certificate .container a {
+  .certificate > .container > a {
     display: none;
   }
 }
@@ -2395,6 +2397,9 @@ body >.header {
   padding-bottom: 107px;
   overflow: hidden;
 }
+.experts .container { 
+  margin: 0 20px;
+}
 .experts .swiper-wrapper {
   margin-bottom: 50px;
   padding-top: 60px;
@@ -2418,7 +2423,6 @@ body >.header {
   text-align: center;
   color: #fff;
   padding-bottom: 38px;
-  margin: 0 10px;
   padding-left: 20px;
   padding-right: 20px;
   width: 100%;
