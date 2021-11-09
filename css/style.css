@@ -2114,7 +2114,7 @@ body >.header {
           text-decoration-line: underline;
 }
 .instruments .instrumentsSwiper {
-  margin: 9px 9px 20px 9px;
+  margin: 7px 7px 20px 7px;
 }
 .instruments .swiper-wrapper {
   padding-bottom: 20px;
@@ -2221,7 +2221,7 @@ body >.header {
   position: relative;
 }
 .rewievs .rewievsSwiper {
-  margin: 9px 9px 20px 9px;
+  margin: 7px 7px 20px 7px;
 }
 .rewievs .swiper-wrapper {
   padding-bottom: 20px;
