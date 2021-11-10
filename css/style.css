@@ -1156,10 +1156,18 @@ body >.header {
        object-fit: cover;
   }
   .service-item > .content:hover > .title {
+    animation: none;
     margin-bottom: 5px;
   }
   .service-item > .content:hover > .order {
     margin-top: 15px;
+  }
+
+  .service-item > .content:hover > .price {
+    animation: none;
+  }
+  .service-item > .content:hover > button.order {
+    animation: none;
   }
 }
 @media screen and (max-width: 450px) {
