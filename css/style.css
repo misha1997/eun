@@ -1064,13 +1064,24 @@ body >.header {
 }
 .service-item > .content:hover > .price {
   display: block;
+  animation: showDiv 0.5s forwards;
 }
 .service-item > .content:hover > button.order {
   display: block;
+  animation: showDiv 0.5s forwards;
   margin-top: 22px;
 }
 .service-item > .content:hover > .title {
   margin: 0 0 11px 0;
+  animation: showDiv 0.5s forwards;
+}
+@keyframes showDiv {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 @media screen and (max-width: 1000px) {
   .services {
@@ -1751,6 +1762,9 @@ body >.header {
   .certificate .swiper-slide .magnifier {
     display: block;
   }
+  .certificate .swiper-slide:hover {
+    background: none;
+  }
   .certificate .container {
     padding: 0 20px;
   }
@@ -1769,9 +1783,6 @@ body >.header {
   .certificate .container {
     padding: 0px;
     margin-bottom: 0;
-  }
-  .certificate .swiper-slide:hover {
-    background: #000;
   }
   .certificate {
     padding: 25px 20px;
@@ -1870,9 +1881,9 @@ body >.header {
   text-align: center;
 }
 .portfolio .portfolio-item {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
   opacity: 0;
 }
 .portfolio .portfolio-item .text {

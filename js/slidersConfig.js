@@ -170,14 +170,14 @@ function currentSlide(n) {
         slides[i].style.display = "block";
         setTimeout(function() {
           slides[i].style.opacity = "1";
-        }, 500);
-      }, 500);
+        }, 200);
+      }, 200);
       buttons[i].classList.add('active');
     } else {
       slides[i].style.opacity = "0";
       setTimeout(function() {
         slides[i].style.display = "none";
-      }, 500);
+      }, 200);
       buttons[i].classList.remove('active');
     }
   }
