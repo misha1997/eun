@@ -44,7 +44,32 @@ function showHideModal() {
     document.getElementsByTagName('body')[0].style.overflow = "auto";
     setTimeout(function() {
       document.getElementById('modal').style.display = "none";
-    }, 500);
+    }, 200);
+  }
+}
+
+// modal product
+var modalProduct = false;
+function showHideModalProduct(e) {
+  var elementModal = document.getElementById('modal-product');
+  modalProduct = !modalProduct;
+  if(modalProduct) {
+    e = e || window.event;
+    var instument = e.target.closest('.swiper-slide');
+    elementModal.querySelector('img').setAttribute('src', instument.querySelector('.previev').getAttribute('src'));
+    elementModal.querySelector('h2').innerHTML = instument.querySelector('.title').innerHTML;
+    elementModal.querySelector('p').innerHTML = instument.querySelector('.full-description').innerHTML;
+    elementModal.style.display = "flex";
+    document.getElementsByTagName('body')[0].style.overflow = "hidden";
+    setTimeout(function() {
+      elementModal.style.opacity = '1';
+    }, 0);
+  } else {
+    elementModal.style.opacity = '0';
+    document.getElementsByTagName('body')[0].style.overflow = "auto";
+    setTimeout(function() {
+      elementModal.style.display = "none";
+    }, 200);
   }
 }
 
