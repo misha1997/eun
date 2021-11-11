@@ -2433,10 +2433,10 @@ body >.header {
 .experts {
   text-align: center;
   padding-bottom: 107px;
-  overflow: hidden;
 }
 .experts .container { 
   margin: 0 20px;
+  position: relative;
 }
 .experts .swiper-wrapper {
   margin-bottom: 30px;
@@ -2495,7 +2495,47 @@ body >.header {
 .experts .swiper-pagination {
   display: none;
 }
-@media screen and (max-width: 1200px) {
+.experts .swiper-prev, .experts .swiper-next {
+  margin: 0 15px;
+}
+.experts .swiper-prev {
+  background: url('../img/left-icon.png') no-repeat;
+  background-position: center center;
+}
+.experts .swiper-next {
+  background: url('../img/right-icon.png') no-repeat;
+  background-position: center center;
+}
+.experts .swiper-prev {
+  background: url('../img/left-icon.png') no-repeat;
+  background-position: center center;
+  left: -110px;
+}
+.experts .swiper-next {
+  background: url('../img/right-icon.png') no-repeat;
+  background-position: center center;
+  right: -110px;
+}
+@media screen and (max-width: 1500px) {
+  .experts .swiper-prev {
+    left: -100px;
+  }
+  .experts .swiper-next {
+    right: -100px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .experts .swiper-prev {
+    left: -85px;
+  }
+  .experts .swiper-next {
+    right: -85px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .experts .swiper-prev, .experts .swiper-next {
+    display: none;
+  }
   .experts .swiper-pagination {
     display: block;
   }
@@ -2515,6 +2555,7 @@ body >.header {
   }
   .experts {
     padding: 0 20px 40px 20px;
+    overflow: hidden;
   }
   .expertsSwiper {
     width: 100%;

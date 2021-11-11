@@ -12,22 +12,18 @@ var swiper = new Swiper(".expertsSwiper", {
   },
   breakpoints: {
     900: {
-      loop: true,
       slidesPerView: 3,
       spaceBetween: 10,
     },
     800: {
-      loop: true,
       slidesPerView: 2,
       spaceBetween: 10,
     },
     700: {
-      loop: true,
       slidesPerView: 2,
       spaceBetween: 10,
     },
     1200: {
-      loop: false,
       slidesPerView: 4,
       spaceBetween: 20,
     },
